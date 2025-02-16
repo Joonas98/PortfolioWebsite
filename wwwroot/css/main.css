@@ -1,5 +1,9 @@
-﻿body {
-    font-family: Arial, sans-serif;
+﻿
+* {
+    font-family: "Spline Sans", serif;
+}
+
+body {
     background-color: #181818;
     color: #ddd;
     margin: 0;
@@ -7,25 +11,38 @@
 }
 
 .main-container {
-    max-width: 900px;
+    max-width: 60%;
     margin: auto;
     padding: 20px;
 }
 
 h1, h2, h3 {
+    font-size: 42px;
     color: #facc15; /* Yellow accent */
 }
 
+h2 {
+    color: #00ff00; /* Max green */
+}
+
 .bio-section, .experience-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .experience-item {
     background: #222;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 15px;
 }
+
+    .experience-item h3 {
+        /* Apparentally browser create automatically extra padding for h3, 
+            which makes the experience cards look bad */
+        margin-top: 0;
+        padding-top: 0;
+    }
+
 
 .layout {
     display: flex;
@@ -33,10 +50,41 @@ h1, h2, h3 {
 
 .content {
     margin-left: 80px; /* Space for the navbar */
-    padding: 20px;
+    padding: 10px;
     flex-grow: 1;
 }
 
+.bio-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.contact-section h2 {
+    margin-top: 30px;
+    color: #facc15;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .contact-list li {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    .contact-list a {
+        color: #4ea8de;
+        text-decoration: none;
+    }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+/* Blazor error stuff */
 #blazor-error-ui {
     position: fixed;
     bottom: 0;
