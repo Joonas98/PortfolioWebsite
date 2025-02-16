@@ -1,0 +1,38 @@
+﻿@inject PortfolioWebsite.Services.ProjectService ProjectService
+@using PortfolioWebsite.Models
+
+@if (projects == null)
+{
+    <p>Loading projects...</p>
+}
+else if (projects.Count == 0)
+{
+    <p>No projects found.</p>
+}
+else
+{
+    <div class="projects-container">
+        @foreach (var project in projects)
+        {
+            <div class="project-card">
+                <h3>@project.Name</h3>
+                <p>@project.Description</p>
+                <p><strong>Technologies:</strong> @string.Join(", ", project.Technologies)</p>
+                <p><strong>Year:</strong> @project.YearRange</p>
+                @if (!string.IsNullOrEmpty(project.RepoUrl))
+                {
+                    <a href="@project.RepoUrl" target="_blank">GitHub</a>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await ProjectService.GetProjectsAsync();
+    }
+}

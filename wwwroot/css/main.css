@@ -1,0 +1,61 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #facc15; /* Yellow accent */
+}
+
+.bio-section, .experience-section {
+    margin-bottom: 40px;
+}
+
+.experience-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.layout {
+    display: flex;
+}
+
+.content {
+    margin-left: 80px; /* Space for the navbar */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+#blazor-error-ui {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffcccc;
+    color: #800000;
+    padding: 10px;
+    display: none; /* This prevents it from being visible when there are no errors */
+    z-index: 1000;
+}
+
+    #blazor-error-ui a {
+        color: #800000;
+        font-weight: bold;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    #blazor-error-ui.show {
+        display: block !important; /* Blazor only shows it when needed */
+    }

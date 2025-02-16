@@ -1,0 +1,43 @@
+﻿@page "/"
+@inject ProjectService ProjectService
+@using Services
+@using Models
+
+<div class="main-container">
+    <section id="bio" class="bio-section">
+        <h1>Your Name</h1>
+        <p>A brief description about yourself. Mention your skills, interests, and what you do.</p>
+        <div class="social-links">
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Job Title - Company</h3>
+            <p>Worked from 2020 - 2023</p>
+            <p>Technologies: C#, Blazor, Unity</p>
+        </div>
+        <div class="experience-item">
+            <h3>Another Job Title - Another Company</h3>
+            <p>Worked from 2018 - 2020</p>
+            <p>Technologies: JavaScript, React, Node.js</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <Projects />
+    </section>
+</div>
+
+@code {
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await ProjectService.GetProjectsAsync();
+    }
+}

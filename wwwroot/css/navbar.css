@@ -1,0 +1,48 @@
+﻿.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .nav-item:hover {
+        background: #444;
+    }
+
+.nav-tooltip {
+    position: absolute;
+    left: 70px;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+.nav-item:hover .nav-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
