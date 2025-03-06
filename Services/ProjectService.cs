@@ -14,8 +14,29 @@ namespace PortfolioWebsite.Services
 
 		public async Task<List<Project>> GetProjectsAsync()
 		{
-			var response = await _httpClient.GetStringAsync("projects.json");
-			return JsonSerializer.Deserialize<List<Project>>(response) ?? new List<Project>();
+			try
+			{
+				var request = new HttpRequestMessage(HttpMethod.Get, $"projects.json?t={DateTime.Now.Ticks}");
+				request.Headers.CacheControl = new System.Net.Http.Headers.CacheControlHeaderValue
+				{
+					NoCache = true,
+					NoStore = true,
+					MustRevalidate = true
+				};
+
+				var response = await _httpClient.SendAsync(request);
+				response.EnsureSuccessStatusCode();
+
+				var json = await response.Content.ReadAsStringAsync();
+				var projects = JsonSerializer.Deserialize<List<Project>>(json);
+
+				return projects ?? new List<Project>();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine($"Error loading projects: {ex.Message}");
+				return new List<Project>();
+			}
 		}
 	}
 }

@@ -1,16 +1,36 @@
 [
   {
-    "Name": "Sprint Planning Tool",
-    "Description": "A Blazor-based collaborative sprint planning tool.",
-    "Technologies": [ "Blazor", "C#", "JSON" ],
-    "YearRange": "2024",
-    "RepoUrl": "https://github.com/yourrepo/sprint-planning"
-  },
-  {
     "Name": "Portfolio Website",
     "Description": "My personal portfolio built with Blazor WebAssembly.",
     "Technologies": [ "Blazor", "C#", "CSS" ],
     "YearRange": "2025",
-    "RepoUrl": "https://github.com/yourrepo/portfolio"
+    "RepoUrl": "https://github.com/Joonas98/PortfolioWebsite"
+  },
+  {
+    "Name": "Sprint Planning Tool",
+    "Description": "A Blazor-based collaborative sprint planning tool.",
+    "Technologies": [ "Blazor", "C#", "JSON" ],
+    "YearRange": "2024",
+    "RepoUrl": "https://github.com/Joonas98/SprintPlanningTool"
+  },
+  {
+    "Name": "Mortage Calculator",
+    "Description": "Simple mortage calculator with database.",
+    "Technologies": [ "C#", "ASP.NET", "SQL", "Azure" ],
+    "YearRange": "2023",
+    "RepoUrl": "https://github.com/Joonas98/MortagePlan and https://github.com/Joonas98/ASP-Database"
+  },
+  {
+    "Name": "Homewide Adblock System",
+    "Description": "Less programming focused, but very practical project.",
+    "Technologies": [ "Raspberry PI", "Networking", "Linux" ],
+    "YearRange": "2023"
+  },
+  {
+    "Name": "SAM Project",
+    "Description": "Engineer's thesis and continuation as a job.",
+    "Technologies": [ "C#", "UI & UX", "Unity" ],
+    "YearRange": "2023",
+    "OtherLink": "https://www.theseus.fi/handle/10024/781688"
   }
 ]

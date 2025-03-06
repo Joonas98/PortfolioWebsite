@@ -23,6 +23,10 @@ else
                 {
                     <a href="@project.RepoUrl" target="_blank">GitHub</a>
                 }
+                @if (!string.IsNullOrEmpty(project.OtherLink))
+                {
+                    <a href="@project.OtherLink" target="_blank">Other Link</a>
+                }
             </div>
         }
     </div>
@@ -34,5 +38,6 @@ else
     protected override async Task OnInitializedAsync()
     {
         projects = await ProjectService.GetProjectsAsync();
+        StateHasChanged(); // Force UI refresh
     }
 }
