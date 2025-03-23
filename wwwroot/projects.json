@@ -32,5 +32,61 @@
     "Technologies": [ "C#", "UI & UX", "Unity" ],
     "YearRange": "2023",
     "OtherLink": "https://www.theseus.fi/handle/10024/781688"
+  },
+  {
+    "Name": "News Reacts",
+    "Description": "I was hired to a small company to work on a game named News Reacts. The game was successfully released in steam in May 2022.",
+    "Technologies": [ "C#", "Unity", "UI & UX", "JS" ],
+    "YearRange": "2022 - 2022",
+    "OtherLink": "https://store.steampowered.com/app/1775300/News_Reacts/"
+  },
+  {
+    "Name": "ML/AI DIRECTOR",
+    "Description": "Innovation project for school. Our customer was Bigger Scope, who wanted a ML / AI director which would control the game flow according to player's game style.'",
+    "Technologies": [ "Python", "ML", "AI", "Data Science" ],
+    "YearRange": "2021",
+    "RepoUrl": "https://github.com/Joonas98/SnSFlow/tree/main"
+  },
+  {
+    "Name": "OpenGL Renderer",
+    "Description": "Basic scene rendering with OpenGL and C++",
+    "Technologies": [ "C++", "C", "OpenGL" ],
+    "YearRange": "2021",
+    "RepoUrl": "https://github.com/Joonas98/OpenGLDemo"
+  },
+  {
+    "Name": "Nords and Swords",
+    "Description": "I was the lead programmer in a collaboration project of 2 schools. We got a solid end result, which can downloaded from my Google Drive.",
+    "Technologies": [ "C#", "Unity", "Team management" ],
+    "YearRange": "2020",
+    "OtherLink": "https://drive.google.com/drive/folders/1cL-WIAaqMUxpgvuTtrogVP7geioqSQLs"
+  },
+  {
+    "Name": "Chess with AI",
+    "Description": "Console Chess with C++. The cool thing in this project is the super strong Chess AI via minimax algorithm and alpha-beta pruning.",
+    "Technologies": [ "C++", "Algorithms", "Game theory" ],
+    "YearRange": "2020",
+    "RepoUrl": "https://github.com/Joonas98/ChessProject"
+  },
+  {
+    "Name": "Collision Detection",
+    "Description": "2D Simulation of objects, which can calculate interactions between objects and surfaces, that have gravity and elasticity.",
+    "Technologies": [ "Python", "Physics" ],
+    "YearRange": "2020",
+    "RepoUrl": "https://github.com/Joonas98/CollisionDetection"
+  },
+  {
+    "Name": "Balls and Boxes",
+    "Description": "Fast 2 week copy of a classic brick breaker game, with some own twists.",
+    "Technologies": [ "C#", "Unity" ],
+    "YearRange": "2019",
+    "OtherLink": "https://drive.google.com/drive/folders/1CO5yl0YdGg9zDHGR-1aAj_Vvz-J7qv9q"
+  },
+  {
+    "Name": "Grainraiders",
+    "Description": "My first proper game project. Nothing too complicated, but really holds a nostalgic warm place in my heart. The game is actually surprisingly engaging and fun too!",
+    "Technologies": [ "C#", "Unity" ],
+    "YearRange": "2019",
+    "OtherLink": "https://drive.google.com/drive/folders/1ZrgR-jDOkSU99XAiaLZ5g-UTM1kBBPGE"
   }
 ]
