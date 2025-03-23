@@ -11,14 +11,14 @@ body {
 }
 
 .main-container {
-    max-width: 60%;
+    max-width: 85%;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 h1, h2, h3 {
     font-size: 42px;
-    color: #facc15; /* Yellow accent */
+    color: #ffff32; /* Yellow accent */
 }
 
 h2 {
@@ -49,7 +49,7 @@ h2 {
 }
 
 .content {
-    margin-left: 80px; /* Space for the navbar */
+    margin-left: 25px; /* Space for the navbar */
     padding: 10px;
     flex-grow: 1;
 }
@@ -62,7 +62,7 @@ h2 {
 
 .contact-section h2 {
     margin-top: 30px;
-    color: #facc15;
+    color: #ffff32;
 }
 
 .contact-list {
