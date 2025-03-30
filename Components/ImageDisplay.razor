@@ -1,0 +1,40 @@
+﻿@namespace Components
+@using System.Timers
+@using Microsoft.AspNetCore.Components
+@implements IDisposable
+
+<div class="image-display @CssClass">
+    @if (ImageUrls != null && ImageUrls.Any())
+    {
+        <img src="@ImageUrls[currentIndex]" alt="Image" />
+    }
+</div>
+
+@code {
+    [Parameter] public List<string> ImageUrls { get; set; } = new List<string>();
+    [Parameter] public int SlideInterval { get; set; } = 3000;
+    [Parameter] public bool AutoSlide { get; set; } = true;
+    [Parameter] public string CssClass { get; set; } = "";
+
+    private int currentIndex = 0;
+    private Timer? slideTimer;
+
+    protected override void OnInitialized()
+    {
+        if (AutoSlide && ImageUrls.Count > 1)
+        {
+            slideTimer = new Timer(SlideInterval);
+            slideTimer.Elapsed += (s, e) =>
+            {
+                currentIndex = (currentIndex + 1) % ImageUrls.Count;
+                InvokeAsync(StateHasChanged);
+            };
+            slideTimer.Start();
+        }
+    }
+
+    public void Dispose()
+    {
+        slideTimer?.Dispose();
+    }
+}

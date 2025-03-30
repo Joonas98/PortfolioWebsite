@@ -1,0 +1,6 @@
+﻿.image-display img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    border-radius: 8px;
+}

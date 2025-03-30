@@ -4,21 +4,22 @@
 @using Models
 
 <div class="main-container">
-    <section class="bio-section">
+     <section class="bio-section">
         <h1>Portfolio - Joonas Suuronen</h1>
-        <p>Engineer, full-stack developer, programmer, entrepeneur, tech enthustiast</p>
+        <p>Engineer, full-stack developer, programmer, entrepreneur, tech enthusiast</p>
+        <ImageDisplay ImageUrls="@(bioImages)" SlideInterval="4000" CssClass="large" />
     </section>
 
     <section class="contact-section">
         <h2>📌 Contact & Links</h2>
         <ul class="contact-list">
-            <li>📍 Location: Espoo, Finland</li>
+            <li>🌐 Location: Espoo, Finland</li>
             <li>📧 Email: <a href="mailto:jsuuronen9@gmail.com">jsuuronen9@gmail.com</a></li>
             <li>🐙 GitHub: <a href="https://github.com/Joonas98" target="_blank">Github - Joonas98</a></li>
             <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/joonas-suuronen-8726ab255/" target="_blank">LinkedIn - Joonas Suuronen</a></li>
         </ul>
     </section>
-
+    
     <section id="experience" class="experience-section">
         <h2>Experience</h2>
         <div class="experience-item">
@@ -75,4 +76,10 @@
     {
         projects = await ProjectService.GetProjectsAsync();
     }
+
+    private List<string> bioImages = new List<string>
+    {
+        "Images/Crosskey.png",
+        "Images/Joonas1.jpg"
+    };
 }
