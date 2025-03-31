@@ -1,0 +1,32 @@
+﻿.contact-section h2 {
+    margin-top: 30px;
+    color: #ffff32;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .contact-list li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-list a {
+        color: #4ea8de;
+        text-decoration: none;
+    }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px; /* Spacing between icon and text */
+    vertical-align: middle;
+}

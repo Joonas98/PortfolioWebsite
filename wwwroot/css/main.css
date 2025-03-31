@@ -11,9 +11,9 @@ body {
 }
 
 .main-container {
-    max-width: 85%;
+    max-width: 80%;
     margin: auto;
-    padding: 15px;
+    padding: 20px;
 }
 
 h1, h2, h3 {
@@ -29,6 +29,18 @@ h2 {
     margin-bottom: 50px;
 }
 
+.bio-container {
+    display: grid;
+    grid-template-columns: 60% 40%; /* 60% for bio text, 40% for images */
+    gap: 20px;
+    align-items: start;
+    height: 60%;
+}
+
+    .bio-text {
+
+}
+
 .experience-item {
     background: #222;
     padding: 15px;
@@ -39,9 +51,9 @@ h2 {
     .experience-item h3 {
         /* Apparentally browser create automatically extra padding for h3, 
             which makes the experience cards look bad */
-        margin-top: 0;
-        padding-top: 0;
-    }
+    margin-top: 0;
+    padding-top: 0;
+}
 
 
 .layout {
@@ -59,30 +71,6 @@ h2 {
     line-height: 1.6;
     color: #ddd;
 }
-
-.contact-section h2 {
-    margin-top: 30px;
-    color: #ffff32;
-}
-
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
-
-    .contact-list li {
-        font-size: 18px;
-        margin: 8px 0;
-    }
-
-    .contact-list a {
-        color: #4ea8de;
-        text-decoration: none;
-    }
-
-        .contact-list a:hover {
-            text-decoration: underline;
-        }
 
 /* Blazor error stuff */
 #blazor-error-ui {

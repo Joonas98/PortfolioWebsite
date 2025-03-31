@@ -2,24 +2,61 @@
 @inject ProjectService ProjectService
 @using Services
 @using Models
+@using Components
 
 <div class="main-container">
-     <section class="bio-section">
-        <h1>Portfolio - Joonas Suuronen</h1>
-        <p>Engineer, full-stack developer, programmer, entrepreneur, tech enthusiast</p>
-        <ImageDisplay ImageUrls="@(bioImages)" SlideInterval="4000" CssClass="large" />
+
+    <section class="bio-section">
+        <div class="bio-container">
+            <div class="bio-text">
+                <h1>Introduction - Joonas Suuronen</h1>
+                <p>
+                    Hello, and welcome to my portfolio website.
+                </p>
+                <p>
+                    I am aspiring full-stack developer with passion and blaa blaa blaa, you can read all the details from this page.
+                </p>
+                <p>
+                    My favorite, and most relatable quote comes from Conficius: 'Choose a job you love, and you'll never have to work a day in
+                    your life.'
+                </p>
+                <!-- Contacts inserted into bio text section -->
+                <div class="bio-contacts">
+                    <h3>Resume, Contacts and Links</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <img src="Icons/fluent-color--document-text-32.svg" alt="Resume" class="contact-icon" />
+                            Resume: 'placeholder text'
+                        </li>
+                        <li>
+                            <img src="Icons/fluent-color--flag-32.svg" alt="Location" class="contact-icon" />
+                            Location: Espoo, Finland
+                        </li>
+                        <li>
+                            <img src="Icons/fluent-color--mail-32.svg" alt="Email" class="contact-icon" />
+                            Email:&nbsp;<a href="mailto:jsuuronen9@gmail.com">jsuuronen9@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="Icons/fluent-color--phone-32.svg" alt="Phone" class="contact-icon" />
+                            Phone:&nbsp;<a href="tel:+358400368833">+358 400368833</a>
+                        </li>
+                        <li>
+                            <img src="Icons/devicon--github.svg" alt="GitHub" class="contact-icon" />
+                            GitHub:&nbsp;<a href="https://github.com/Joonas98" target="_blank">Github - Joonas98</a>
+                        </li>
+                        <li>
+                            <img src="Icons/devicon--linkedin.svg" alt="LinkedIn" class="contact-icon" />
+                            LinkedIn:&nbsp;<a href="https://www.linkedin.com/in/joonas-suuronen-8726ab255/" target="_blank">LinkedIn - Joonas Suuronen</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bio-image">
+                <ImageDisplay ImageUrls="@(bioImages)" SlideInterval="4000" CssClass="large" />
+            </div>
+        </div>
     </section>
 
-    <section class="contact-section">
-        <h2>📌 Contact & Links</h2>
-        <ul class="contact-list">
-            <li>🌐 Location: Espoo, Finland</li>
-            <li>📧 Email: <a href="mailto:jsuuronen9@gmail.com">jsuuronen9@gmail.com</a></li>
-            <li>🐙 GitHub: <a href="https://github.com/Joonas98" target="_blank">Github - Joonas98</a></li>
-            <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/joonas-suuronen-8726ab255/" target="_blank">LinkedIn - Joonas Suuronen</a></li>
-        </ul>
-    </section>
-    
     <section id="experience" class="experience-section">
         <h2>Experience</h2>
         <div class="experience-item">
@@ -30,12 +67,12 @@
         <div class="experience-item">
             <h3>Software Developer - Metropolia UAS, SAM-project</h3>
             <p>Worked through 2022</p>
-            <p>Technologies: front-end development, UI & UX, C#, Unity</p>
+            <p>Technologies: front-end development, UI &amp; UX, C#, Unity</p>
         </div>
         <div class="experience-item">
             <h3>Game Developer - Net Get Games</h3>
             <p>Worked from 2020 - 2022</p>
-            <p>Technologies: front-end development, UI & UX, C#, Unity</p>
+            <p>Technologies: front-end development, UI &amp; UX, C#, Unity</p>
         </div>
         <div class="experience-item">
             <h3>Security Guard - Avarn Security</h3>
@@ -79,7 +116,7 @@
 
     private List<string> bioImages = new List<string>
     {
-        "Images/Crosskey.png",
-        "Images/Joonas1.jpg"
+        "Images/Joonas1.jpg",
+        "Images/Joonas2.jpg"
     };
 }

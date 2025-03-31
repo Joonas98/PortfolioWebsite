@@ -1,6 +1,21 @@
 ﻿.image-display img {
     width: 100%;
     height: auto;
-    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    object-fit: contain;
     border-radius: 8px;
 }
+
+.bio-image {
+    overflow: hidden;
+    max-height: 700px;
+    border-radius: 8px;
+}
+
+    .bio-image img {
+        margin-top: 50px;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
