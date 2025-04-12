@@ -1,12 +1,17 @@
-﻿@namespace Components
-@using System.Timers
+﻿@using System.Timers
 @using Microsoft.AspNetCore.Components
 @implements IDisposable
+@namespace Components
 
 <div class="image-display @CssClass">
     @if (ImageUrls != null && ImageUrls.Any())
     {
-        <img src="@ImageUrls[currentIndex]" alt="Image" />
+        <img src="@ImageUrls[currentIndex]" alt="Image @(currentIndex + 1)" />
+        <div class="image-controls">
+            <button class="control-btn" @onclick="ShowPrevious">Previous</button>
+            <span class="indicator">@((currentIndex + 1)) / @ImageUrls.Count</span>
+            <button class="control-btn" @onclick="ShowNext">Next</button>
+        </div>
     }
 </div>
 
@@ -21,15 +26,35 @@
 
     protected override void OnInitialized()
     {
+        // Start auto slide timer if enabled and there is more than one image.
         if (AutoSlide && ImageUrls.Count > 1)
         {
             slideTimer = new Timer(SlideInterval);
             slideTimer.Elapsed += (s, e) =>
             {
-                currentIndex = (currentIndex + 1) % ImageUrls.Count;
-                InvokeAsync(StateHasChanged);
+                InvokeAsync(() =>
+                {
+                    ShowNext();
+                    StateHasChanged();
+                });
             };
             slideTimer.Start();
+        }
+    }
+
+    private void ShowNext()
+    {
+        if (ImageUrls.Count > 0)
+        {
+            currentIndex = (currentIndex + 1) % ImageUrls.Count;
+        }
+    }
+
+    private void ShowPrevious()
+    {
+        if (ImageUrls.Count > 0)
+        {
+            currentIndex = (currentIndex - 1 + ImageUrls.Count) % ImageUrls.Count;
         }
     }
 

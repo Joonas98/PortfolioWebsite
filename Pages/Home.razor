@@ -5,7 +5,6 @@
 @using Components
 
 <div class="main-container">
-
     <section class="bio-section">
         <div class="bio-container">
             <div class="bio-text">
@@ -26,7 +25,12 @@
                     <ul class="contact-list">
                         <li>
                             <img src="Icons/fluent-color--document-text-32.svg" alt="Resume" class="contact-icon" />
-                            Resume: 'placeholder text'
+                            Resume:&nbsp;
+                            <div class="resume-buttons">
+                                <a href="Resume/resume.pdf" target="_blank" class="btn view-btn">View</a>
+                                <span> | </span>
+                                <a href="Resume/resume.pdf" download class="btn download-btn">Download</a>
+                            </div>
                         </li>
                         <li>
                             <img src="Icons/fluent-color--flag-32.svg" alt="Location" class="contact-icon" />
@@ -52,7 +56,7 @@
                 </div>
             </div>
             <div class="bio-image">
-                <ImageDisplay ImageUrls="@(bioImages)" SlideInterval="4000" CssClass="large" />
+                <ImageDisplay ImageUrls="@(bioImages)" SlideInterval="4000" AutoSlide="true" CssClass="large" />
             </div>
         </div>
     </section>

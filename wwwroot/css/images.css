@@ -19,3 +19,31 @@
         object-fit: contain;
         border-radius: 8px;
     }
+
+/* Controls appear below the image */
+.image-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.control-btn {
+    background-color: #4ea8de;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+    .control-btn:hover {
+        background-color: #3d8acb;
+    }
+
+.indicator {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+}
