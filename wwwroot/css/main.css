@@ -1,6 +1,14 @@
 ﻿
 * {
-    font-family: "Spline Sans", serif;
+    font-family: 'Roboto Condensed';
+}
+
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
 }
 
 body {
@@ -11,7 +19,7 @@ body {
 }
 
 .main-container {
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;
     padding: 20px;
 }
@@ -27,7 +35,14 @@ h2 {
 
 .bio-section, .experience-section {
     margin-bottom: 50px;
+    line-height: 1.6;
 }
+
+    .bio-section p {
+        font-size: 24px;
+        line-height: 1.6;
+        color: #ddd;
+    }
 
 .bio-container {
     display: grid;
@@ -37,22 +52,50 @@ h2 {
     height: 60%;
 }
 
-    .bio-text {
-
-}
-
+/* Overall card layout: text on the left, logo on the right */
 .experience-item {
+    display: flex;
+    justify-content: space-between; /* Keeps the text and logo apart */
+    align-items: flex-start; /* Align items at the top */
     background: #222;
     padding: 15px;
     border-radius: 12px;
     margin-bottom: 15px;
 }
 
-    .experience-item h3 {
-        /* Apparentally browser create automatically extra padding for h3, 
-            which makes the experience cards look bad */
-    margin-top: 0;
-    padding-top: 0;
+/* Container for the text block */
+.experience-details {
+    display: block; /* Block layout ensures each child element is on its own row */
+    flex: 1; /* Take up available horizontal space */
+    margin-right: 15px; /* Space between text and the logo */
+}
+
+    /* Clear styling for the title and paragraphs */
+    .experience-details h3 {
+        margin: 0 0 10px 0; /* Margin below the title */
+        text-align: left; /* Explicit text alignment */
+    }
+
+    .experience-details p {
+        margin: 0 0 16px 0; /* Margin-bottom for each paragraph, ensuring each is its own row */
+        font-size: 24px; /* Adjusted font size for better readability */
+        text-align: left;
+    }
+
+/* Logo container is fixed in size and maintains a square (1:1 aspect ratio) */
+.experience-logo-container {
+    height: 200px;
+    width: 200px;
+    flex-shrink: 0; /* Prevents the container from shrinking when space is tight */
+    border-radius: 16px; /* Optional: matches your other image styling */
+}
+
+/* Logo styles */
+.experience-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the logo scales correctly within the container */
+    border-radius: 16px; /* Optional: matches your other image styling */
 }
 
 
@@ -64,12 +107,6 @@ h2 {
     margin-left: 25px; /* Space for the navbar */
     padding: 10px;
     flex-grow: 1;
-}
-
-.bio-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #ddd;
 }
 
 /* Blazor error stuff */
