@@ -37,9 +37,16 @@
     {
         if (AutoSlide && ImageUrls.Count > 1)
         {
-            _cts = new CancellationTokenSource();
-            _ = AutoLoop(_cts.Token);
+            StartAutoSlide();
         }
+    }
+
+    private void StartAutoSlide()
+    {
+        _cts?.Cancel();
+        _cts?.Dispose();
+        _cts = new CancellationTokenSource();
+        _ = AutoLoop(_cts.Token);
     }
 
     private async Task AutoLoop(CancellationToken token)
@@ -59,23 +66,13 @@
     private void ShowNext()
     {
         currentIndex = (currentIndex + 1) % ImageUrls.Count;
-        ResetAutoLoop();
+        if (AutoSlide) StartAutoSlide();
     }
 
     private void ShowPrevious()
     {
         currentIndex = (currentIndex - 1 + ImageUrls.Count) % ImageUrls.Count;
-        ResetAutoLoop();
-    }
-
-    private void ResetAutoLoop()
-    {
-        if (!AutoSlide || ImageUrls.Count <= 1)
-            return;
-        _cts?.Cancel();
-        _cts?.Dispose();
-        _cts = new CancellationTokenSource();
-        _ = AutoLoop(_cts.Token);
+        if (AutoSlide) StartAutoSlide();
     }
 
     public void Dispose()

@@ -29,10 +29,11 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     pointer-events: none;
     z-index: 2;
+    /*outline: 1px auto #00ff08; */
 }
 
 .control-btn {
@@ -64,3 +65,4 @@
         height: 100%;
         width: 100%;
     }
+
