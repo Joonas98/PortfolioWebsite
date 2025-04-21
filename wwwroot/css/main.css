@@ -48,8 +48,7 @@ h2 {
     display: grid;
     grid-template-columns: 60% 40%; /* 60% for bio text, 40% for images */
     gap: 20px;
-    align-items: start;
-    height: 60%;
+    align-items: stretch;
 }
 
 /* Overall card layout: text on the left, logo on the right */
@@ -88,6 +87,7 @@ h2 {
     width: 200px;
     flex-shrink: 0; /* Prevents the container from shrinking when space is tight */
     border-radius: 16px; /* Optional: matches your other image styling */
+    align-self: center;
 }
 
 /* Logo styles */
