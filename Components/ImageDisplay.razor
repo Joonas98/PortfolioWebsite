@@ -56,11 +56,27 @@
         catch (TaskCanceledException) { }
     }
 
-    private void ShowNext() =>
-      currentIndex = (currentIndex + 1) % ImageUrls.Count;
+    private void ShowNext()
+    {
+        currentIndex = (currentIndex + 1) % ImageUrls.Count;
+        ResetAutoLoop();
+    }
 
-    private void ShowPrevious() =>
-      currentIndex = (currentIndex - 1 + ImageUrls.Count) % ImageUrls.Count;
+    private void ShowPrevious()
+    {
+        currentIndex = (currentIndex - 1 + ImageUrls.Count) % ImageUrls.Count;
+        ResetAutoLoop();
+    }
+
+    private void ResetAutoLoop()
+    {
+        if (!AutoSlide || ImageUrls.Count <= 1)
+            return;
+        _cts?.Cancel();
+        _cts?.Dispose();
+        _cts = new CancellationTokenSource();
+        _ = AutoLoop(_cts.Token);
+    }
 
     public void Dispose()
     {
