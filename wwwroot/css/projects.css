@@ -1,9 +1,7 @@
 ﻿/* Use a grid layout to make cards wider and adjust dynamically */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
     gap: 2rem;
-    padding: 1rem;
 }
 
 /* Style each project card */
@@ -12,20 +10,21 @@
     color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    font-size: 24px;
 }
 
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
+        .project-card:hover {
+            /* transform: translateY(-5px); */
+            box-shadow: 0 0px 12px #ffff32;
+        }
 
     /* Style for the project image */
-    .project-card img {
+            .project-card img {
         width: 100%;
         height: auto;
         border-radius: 6px;
@@ -43,12 +42,11 @@
         line-height: 1.5;
     }
 
-    /* Optional: Style the GitHub link */
-    .project-card a {
-        color: #4ea8de;
-        text-decoration: none;
-        font-weight: bold;
-    }
+        .project-card a {
+            color: #4ea8de;
+            text-decoration: none;
+            /*  font-weight: bold;*/
+        }
 
         .project-card a:hover {
             text-decoration: underline;

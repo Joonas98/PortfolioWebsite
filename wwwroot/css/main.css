@@ -60,7 +60,14 @@ h2 {
     padding: 15px;
     border-radius: 12px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+    .experience-item:hover {
+        /* transform: translateY(-5px); */
+        box-shadow: 0 0px 12px #ffff32;
+    }
 
 /* Container for the text block */
 .experience-details {
