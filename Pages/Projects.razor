@@ -17,15 +17,24 @@ else
             <div class="project-card">
                 <h3>@project.Name</h3>
                 <p>@project.Description</p>
-                <p><strong>Technologies:</strong> @string.Join(", ", project.Technologies)</p>
+                <p>
+                    <strong>Technologies:</strong>
+                    @string.Join(", ", project.Technologies)
+                </p>
                 <p><strong>Year:</strong> @project.YearRange</p>
-                @if (!string.IsNullOrEmpty(project.RepoUrl))
+
+                @if (project.Links?.Any() == true)
                 {
-                    <a href="@project.RepoUrl" target="_blank">GitHub</a>
-                }
-                @if (!string.IsNullOrEmpty(project.OtherLink))
-                {
-                    <a href="@project.OtherLink" target="_blank">Other Link</a>
+                    <p>
+                        @foreach (var link in project.Links)
+                        {
+                            <a href="@link.Url" target="_blank">@link.Text</a>
+                            @if (link != project.Links.Last())
+                            {
+                                <span> | </span>
+                            }
+                        }
+                    </p>
                 }
             </div>
         }

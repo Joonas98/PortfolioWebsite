@@ -57,9 +57,9 @@ h2 {
     justify-content: space-between; /* Keeps the text and logo apart */
     align-items: flex-start; /* Align items at the top */
     background: #222;
-    padding: 15px;
+    padding: 1.5rem;
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s, box-shadow 0.2s;
 }
