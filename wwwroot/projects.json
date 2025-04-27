@@ -17,14 +17,17 @@
     "Images": [
       {
         "Url": "/images/projectforsaken/screenshot2.png",
+        "Description": "This is the first screen shot",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/projectforsaken/screenshot4.png",
+        "Description": "This is the second screen shot",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/projectforsaken/screenshot5.png",
+        "Description": "This is the third screen shot",
         "Alt": "Screenshot"
       }
     ]
@@ -51,6 +54,23 @@
         "Text": "GitHub",
         "Url": "https://github.com/Joonas98/SprintPlanningTool"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/SprintPlanningTool/SprintPlanningScreenshot1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SprintPlanningTool/SprintPlanningScreenshot2.png",
+        "Description": "This is the second screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SprintPlanningTool/SprintPlanningScreenshot3.png",
+        "Description": "This is the third screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -66,6 +86,13 @@
       {
         "Text": "GitHub ASP DB",
         "Url": "https://github.com/Joonas98/ASP-Database"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "/images/MortgageCalculator/MortageDemo.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
       }
     ]
   },
@@ -83,6 +110,33 @@
         "Text": "Firebog Website",
         "Url": "https://firebog.net/"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/PiHole/PiholeExplained.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/PiHole/RaspBerry3.png",
+        "Description": "This is the second screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/PiHole/RaspBerry5.png",
+        "Description": "This is the third screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/PiHole/RaspBerry7.png",
+        "Description": "This is the third screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/PiHole/RaspSetup2.jpg",
+        "Description": "This is the third screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -94,6 +148,23 @@
       {
         "Text": "GitHub",
         "Url": "https://github.com/Joonas98/Banaani-Games-Website"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot2.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot3.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
       }
     ]
   },
@@ -107,6 +178,38 @@
         "Text": "Thesis PDF",
         "Url": "https://www.theseus.fi/handle/10024/781688"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/SAMProject/SAM1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SAMProject/SAMMain3.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SAMProject/SAMMain4.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SAMProject/SAMMain5.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SAMProject/SAMMain9.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SAMProject/SAMStart4.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -118,6 +221,23 @@
       {
         "Text": "Steam Store",
         "Url": "https://store.steampowered.com/app/1775300/News_Reacts/"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "/images/NewsReacts/NewsReactsBasic.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/NewsReacts/NewsReactsKeybinds.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/NewsReacts/NewsReactsMap.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
       }
     ]
   },
@@ -131,6 +251,38 @@
         "Text": "GitHub",
         "Url": "https://github.com/Joonas98/SnSFlow/tree/main"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/InnovationProject/PythonData3.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/InnovationProject/PythonData7.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/InnovationProject/PythonData9.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/InnovationProject/PythonDataCombined.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/InnovationProject/PythonDataCombined2.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/InnovationProject/PythonDataCombined3.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -143,6 +295,13 @@
         "Text": "GitHub",
         "Url": "https://github.com/Joonas98/OpenGLDemo"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/OpenGL/OpenGL1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -154,6 +313,13 @@
       {
         "Text": "Drive Folder",
         "Url": "https://drive.google.com/drive/folders/1cL-WIAaqMUxpgvuTtrogVP7geioqSQLs"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "/images/NaS/NaS1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
       }
     ]
   },
@@ -175,6 +341,13 @@
         "Text": "Alpha-Beta Pruning - Wikipedia",
         "Url": "https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/Chess/ChessGameTree.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -186,6 +359,23 @@
       {
         "Text": "GitHub",
         "Url": "https://github.com/Joonas98/CollisionDetection"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "/images/CollisionDetection/CollisionDetection1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/CollisionDetection/CollisionDetection2.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/CollisionDetection/CollisionDetection3.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
       }
     ]
   },
@@ -199,6 +389,23 @@
         "Text": "Drive Folder",
         "Url": "https://drive.google.com/drive/folders/1CO5yl0YdGg9zDHGR-1aAj_Vvz-J7qv9q"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/BnB/BnB1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/BnB/BnB4.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/BnB/BnB5.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -211,6 +418,38 @@
         "Text": "Drive Folder",
         "Url": "https://drive.google.com/drive/folders/1ZrgR-jDOkSU99XAiaLZ5g-UTM1kBBPGE"
       }
+    ],
+    "Images": [
+      {
+        "Url": "/images/Grainraiders/GR1.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/Grainraiders/GR4.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/Grainraiders/GR5.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/Grainraiders/GR6.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/Grainraiders/GR7.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/Grainraiders/GR8.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      }
     ]
   },
   {
@@ -222,6 +461,18 @@
       {
         "Text": "Drive Video",
         "Url": "https://drive.google.com/file/d/11RXObQrnnSGG80rzX_VXXZ-4hYEEMUZT/preview"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "/images/SUMO/sumorobotpath.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
+      },
+      {
+        "Url": "/images/SUMO/sumorobotring.png",
+        "Description": "This is the first screen shot",
+        "Alt": "Screenshot"
       }
     ]
   }
