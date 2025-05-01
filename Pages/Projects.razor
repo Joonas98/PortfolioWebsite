@@ -4,9 +4,9 @@
 
 @if (projects == null)
 {
-    <p>Loading projects...</p>
+    <p>Loading projects…</p>
 }
-else if (projects.Count == 0)
+else if (!projects.Any())
 {
     <p>No projects found.</p>
 }
@@ -24,7 +24,6 @@ else
                 </p>
                 <p><strong>Year:</strong> @project.YearRange</p>
 
-                <!-- Links -->
                 @if (project.Links?.Any() == true)
                 {
                     <p>
@@ -39,24 +38,22 @@ else
                     </p>
                 }
 
-                <!-- Images -->
-                <ImageDisplay ImageUrls="project.Images.Select(img => img.Url).ToList()"
-                              SlideInterval="5000"
-                              AutoSlide="true"
-                              CssClass="images.css" />
-
+                @if (project.Images?.Any() == true)
+                {
+                    <ImageDisplay Images="project.Images"
+                                  SlideInterval="5000"
+                                  AutoSlide="true"/>
+                }
             </div>
         }
     </div>
-
 }
 
 @code {
     private List<Project>? projects;
 
-   protected override async Task OnInitializedAsync()
-   {
-       projects = await ProjectService.GetProjectsAsync();
-       StateHasChanged(); // Force UI refresh
-   }
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await ProjectService.GetProjectsAsync();
+    }
 }

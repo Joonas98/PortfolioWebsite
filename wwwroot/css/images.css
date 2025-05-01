@@ -58,11 +58,31 @@
 }
 
 .bio-image {
+    position: relative;
     overflow: hidden;
+    border-radius: 8px;
 }
 
     .bio-image > .image-display {
-        height: 100%;
-        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
 
+    .bio-image .slide {
+        width: 100%;
+        height: 100%;
+    }
+
+        .bio-image .slide img {
+            max-width: 100%; /* never stretch wider than container */
+            max-height: 100%; /* never stretch taller than container */
+            object-fit: contain; /* letterbox/pillar-box as needed */
+            display: block; /* remove inline-img whitespace */
+        }

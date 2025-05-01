@@ -1,31 +1,34 @@
 ﻿@namespace Components
-@using System.Threading
-@using Microsoft.AspNetCore.Components
+@using PortfolioWebsite.Models
 @implements IDisposable
 
 <div class="image-display @CssClass">
-    @if (ImageUrls?.Any() == true)
+    @if (Images?.Any() == true)
     {
-        @for (int i = 0; i < ImageUrls.Count; i++)
+        @for (int i = 0; i < Images.Count; i++)
         {
-            <img src="@ImageUrls[i]"
-                 alt="Slide @(i + 1)"
-                 class="slide @(i == currentIndex ? "active" : string.Empty)" />
-        }
+            var item = Images[i];
+            <div class="slide @(i == currentIndex ? "active" : string.Empty)">
+                <img src="@item.Url"
+                     alt="@item.Alt" />
 
-        @if (ImageUrls.Count > 1)
-        {
-            <div class="image-controls">
-                <button class="control-btn" @onclick="ShowPrevious">Prev</button>
-                <span class="indicator">@((currentIndex + 1)) / @ImageUrls.Count</span>
-                <button class="control-btn" @onclick="ShowNext">Next</button>
+                <div class="slide-footer">
+                    <button class="btn-prev" @onclick="ShowPrevious" aria-label="Previous slide">‹</button>
+                    <span class="slide-index">@($"{i + 1} / {Images.Count}")</span>
+                    <button class="btn-next" @onclick="ShowNext" aria-label="Next slide">›</button>
+                </div>
+
+                @if (!string.IsNullOrWhiteSpace(item.Description))
+                {
+                    <div class="slide-caption">@item.Description</div>
+                }
             </div>
         }
     }
 </div>
 
 @code {
-    [Parameter] public List<string> ImageUrls { get; set; } = new();
+    [Parameter] public List<Project.ImageInfo> Images { get; set; } = new();
     [Parameter] public int SlideInterval { get; set; } = 4000;
     [Parameter] public bool AutoSlide { get; set; } = true;
     [Parameter] public string CssClass { get; set; } = string.Empty;
@@ -35,7 +38,7 @@
 
     protected override void OnInitialized()
     {
-        if (AutoSlide && ImageUrls.Count > 1)
+        if (AutoSlide && Images.Count > 1)
         {
             StartAutoSlide();
         }
@@ -65,13 +68,13 @@
 
     private void ShowNext()
     {
-        currentIndex = (currentIndex + 1) % ImageUrls.Count;
+        currentIndex = (currentIndex + 1) % Images.Count;
         if (AutoSlide) StartAutoSlide();
     }
 
     private void ShowPrevious()
     {
-        currentIndex = (currentIndex - 1 + ImageUrls.Count) % ImageUrls.Count;
+        currentIndex = (currentIndex - 1 + Images.Count) % Images.Count;
         if (AutoSlide) StartAutoSlide();
     }
 

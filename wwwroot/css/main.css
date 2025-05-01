@@ -49,6 +49,7 @@ h2 {
     grid-template-columns: 60% 40%; /* 60% for bio text, 40% for images */
     gap: 20px;
     align-items: stretch;
+    outline: 1px auto #00ff08; /* Debugging */
 }
 
 /* Overall card layout: text on the left, logo on the right */

@@ -56,10 +56,13 @@
                 </div>
             </div>
             <div class="bio-image">
-                <ImageDisplay ImageUrls="@(bioImages)"
-                              SlideInterval="4000"
-                              AutoSlide="true"
-                              CssClass="large" />
+                @if (bioImages?.Any() == true)
+                {
+                    <ImageDisplay Images="bioImages"
+                                  SlideInterval="4000"
+                                  AutoSlide="true"
+                                  CssClass="" />
+                }
             </div>
         </div>
     </section>
@@ -160,9 +163,9 @@
         projects = await ProjectService.GetProjectsAsync();
     }
 
-    private List<string> bioImages = new List<string>
+    private List<Project.ImageInfo> bioImages = new List<Project.ImageInfo>
     {
-        "Images/Joonas1.jpg",
-        "Images/Joonas2.jpg"
+        new Project.ImageInfo { Url = "images/Joonas1.jpg", Alt = "Joonas Suuronen smiling", Description = "" }
+        // add more slides here as needed
     };
 }
