@@ -1,21 +1,19 @@
 ﻿
 .image-display {
-    display: grid;
+    height: 40rem;
     position: relative;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
     border-radius: 8px;
 }
 
     .image-display .slide {
-        grid-area: 1 / 1;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
-        border-radius: 8px;
     }
 
         .image-display .slide.active {
@@ -23,61 +21,85 @@
             z-index: 1;
         }
 
-.image-controls {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-    z-index: 2;
-    /*outline: 1px auto #00ff08; */
-}
+        .image-display .slide img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
 
-.control-btn {
-    pointer-events: auto;
-    background-color: #4ea8de;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-    .control-btn:hover {
-        background-color: #3d8acb;
+/* FOOTER BAR: prev button, index text, next button */
+    .image-display .slide-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem;
+        gap: 1rem;
+        pointer-events: none;
+        z-index: 2;
     }
 
-.indicator {
-    font-size: 1rem;
-    color: #fff;
-    margin: 0 10px;
-}
+    /* BUTTONS */
+    .image-display .slide-footer .btn-prev,
+    .image-display .slide-footer .btn-next {
+        pointer-events: auto;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1;
+        cursor: pointer;
+        padding: 0 0.5rem;
+        transition: color 0.2s;
+    }
 
+        .image-display .slide-footer .btn-prev:hover,
+        .image-display .slide-footer .btn-next:hover {
+            color: #ffd700;
+        }
+
+    .image-display .slide-footer .slide-index {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .image-display .slide-caption {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 4px;
+        max-width: 90%;
+        text-align: center;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+/* BIO IMAGE */
 .bio-image {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    height: 100%;
+    outline: 1px auto #ff0000
 }
-
-    .bio-image > .image-display {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
 
     .bio-image .slide {
         width: 100%;
         height: 100%;
+        border-radius: 8px;
     }
 
         .bio-image .slide img {
@@ -85,4 +107,5 @@
             max-height: 100%; /* never stretch taller than container */
             object-fit: contain; /* letterbox/pillar-box as needed */
             display: block; /* remove inline-img whitespace */
+            border-radius: 8px;
         }

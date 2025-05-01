@@ -12,11 +12,15 @@
                 <img src="@item.Url"
                      alt="@item.Alt" />
 
-                <div class="slide-footer">
-                    <button class="btn-prev" @onclick="ShowPrevious" aria-label="Previous slide">‹</button>
-                    <span class="slide-index">@($"{i + 1} / {Images.Count}")</span>
-                    <button class="btn-next" @onclick="ShowNext" aria-label="Next slide">›</button>
-                </div>
+                @* only show controls when there are multiple images *@
+                @if (Images.Count > 1)
+                {
+                    <div class="slide-footer">
+                        <button class="btn-prev" @onclick="ShowPrevious" aria-label="Previous slide">‹</button>
+                        <span class="slide-index">@($"{i + 1} / {Images.Count}")</span>
+                        <button class="btn-next" @onclick="ShowNext" aria-label="Next slide">›</button>
+                    </div>
+                }
 
                 @if (!string.IsNullOrWhiteSpace(item.Description))
                 {
@@ -68,14 +72,22 @@
 
     private void ShowNext()
     {
+        if (Images.Count <= 1)
+            return;
+
         currentIndex = (currentIndex + 1) % Images.Count;
-        if (AutoSlide) StartAutoSlide();
+        if (AutoSlide)
+            StartAutoSlide();
     }
 
     private void ShowPrevious()
     {
+        if (Images.Count <= 1)
+            return;
+
         currentIndex = (currentIndex - 1 + Images.Count) % Images.Count;
-        if (AutoSlide) StartAutoSlide();
+        if (AutoSlide)
+            StartAutoSlide();
     }
 
     public void Dispose()
