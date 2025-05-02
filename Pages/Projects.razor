@@ -4,7 +4,7 @@
 
 @if (projects == null)
 {
-    <p>Loading projects…</p>
+    <p>Loading projects...</p>
 }
 else if (!projects.Any())
 {
@@ -16,34 +16,38 @@ else
         @foreach (var project in projects)
         {
             <div class="project-card">
-                <h3>@project.Name</h3>
-                <p>@project.Description</p>
-                <p>
-                    <strong>Technologies:</strong>
-                    @string.Join(", ", project.Technologies)
-                </p>
-                <p><strong>Year:</strong> @project.YearRange</p>
 
-                @if (project.Links?.Any() == true)
-                {
-                    <p>
-                        @foreach (var link in project.Links)
-                        {
-                            <a href="@link.Url" target="_blank">@link.Text</a>
-                            @if (link != project.Links.Last())
+                <div class="project-details">
+                    <h3>@project.Name</h3>
+                    <p>@project.Description</p>
+                    <p><strong>Technologies:</strong> @string.Join(", ", project.Technologies)</p>
+                    <p><strong>Year:</strong> @project.YearRange</p>
+
+                    @if (project.Links?.Any() == true)
+                    {
+                        <p>
+                            @foreach (var link in project.Links)
                             {
-                                <span> | </span>
+                                <a href="@link.Url" target="_blank">@link.Text</a>
+                                @if (link != project.Links.Last())
+                                {
+                                    <span> | </span>
+                                }
                             }
-                        }
-                    </p>
-                }
+                        </p>
+                    }
+                </div>
 
                 @if (project.Images?.Any() == true)
                 {
-                    <ImageDisplay Images="project.Images"
-                                  SlideInterval="5000"
-                                  AutoSlide="true"/>
+                    <div class="project-image">
+                        <ImageDisplay Images="project.Images"
+                                      SlideInterval="5000"
+                                      AutoSlide="true"
+                                      CssClass="project-images" />
+                    </div>
                 }
+
             </div>
         }
     </div>

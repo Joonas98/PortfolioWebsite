@@ -4,50 +4,83 @@
     gap: 2rem;
 }
 
-/* Style each project card */
+/* Style each project card as a two-column layout */
 .project-card {
     background: #222;
     color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 24px;
+    align-items: flex-start;
+}
+
+    .project-card:hover {
+        box-shadow: 0 0px 12px #ffff32;
+    }
+
+/* Left column: image container */
+.project-image {
+    flex: 1;
+    display: flex;
+}
+
+/* Right column: text and links */
+.project-details {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    font-size: 24px;
 }
 
-        .project-card:hover {
-            /* transform: translateY(-5px); */
-            box-shadow: 0 0px 12px #ffff32;
-        }
-
-    /* Style for the project image */
-            .project-card img {
-        width: 100%;
-        height: auto;
-        border-radius: 6px;
-        object-fit: cover;
+    .project-details h3 {
+        margin: 0;
+        color: #ffff32;
     }
 
-    /* Ensure headings and paragraphs are nicely spaced */
-    .project-card h3 {
-        margin: 0; /* Remove default top margin */
-        color: #ffff32 ;
-    }
-
-    .project-card p {
+    .project-details p {
         margin: 0.5rem 0;
         line-height: 1.5;
     }
 
-        .project-card a {
-            color: #4ea8de;
-            text-decoration: none;
-            /*  font-weight: bold;*/
-        }
+    .project-details a {
+        color: #4ea8de;
+        text-decoration: none;
+    }
 
-        .project-card a:hover {
+        .project-details a:hover {
             text-decoration: underline;
         }
+
+
+.project-image .image-display {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+    .project-image .slide.active {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .project-image .slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
