@@ -24,6 +24,7 @@
     justify-content: center;
     text-decoration: none;
     transition: background 0.3s;
+    background: #333;
 }
 
     .nav-item img {
@@ -51,4 +52,9 @@
 .nav-item:hover .nav-tooltip {
     opacity: 1;
     visibility: visible;
+}
+
+.toggle {
+    margin-top: auto;
+    margin-bottom: 20px;
 }

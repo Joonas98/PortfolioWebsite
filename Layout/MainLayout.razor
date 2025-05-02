@@ -1,9 +1,19 @@
-﻿@inherits LayoutComponentBase
-@using Components
+﻿@using Components
+@inherits LayoutComponentBase
 
-<div class="layout">
-    <NavMenu />
-    <div class="content">
-        @Body
+<CascadingValue Value="autoSlideEnabled">
+    <div class="layout">
+        <NavMenu AutoSlideEnabled="autoSlideEnabled"
+                 ToggleAutoSlide="ToggleAutoSlide" />
+        <div class="content">
+            @Body
+        </div>
     </div>
-</div>
+</CascadingValue>
+
+@code {
+    private bool autoSlideEnabled = true;
+
+    private void ToggleAutoSlide()
+      => autoSlideEnabled = !autoSlideEnabled;
+}

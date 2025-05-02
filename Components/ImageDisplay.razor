@@ -9,10 +9,8 @@
         {
             var item = Images[i];
             <div class="slide @(i == currentIndex ? "active" : string.Empty)">
-                <img src="@item.Url"
-                     alt="@item.Alt" />
+                <img src="@item.Url" alt="@item.Alt" />
 
-                @* only show controls when there are multiple images *@
                 @if (Images.Count > 1)
                 {
                     <div class="slide-footer">
@@ -34,15 +32,36 @@
 @code {
     [Parameter] public List<Project.ImageInfo> Images { get; set; } = new();
     [Parameter] public int SlideInterval { get; set; } = 4000;
-    [Parameter] public bool AutoSlide { get; set; } = true;
     [Parameter] public string CssClass { get; set; } = string.Empty;
+
+    private bool _autoSlideEnabled;
+    [CascadingParameter]
+    public bool AutoSlideEnabled
+    {
+        get => _autoSlideEnabled;
+        set
+        {
+            if (_autoSlideEnabled == value) return;
+            _autoSlideEnabled = value;
+            if (!_autoSlideEnabled)
+            {
+                _cts?.Cancel();
+                _cts?.Dispose();
+                _cts = null;
+            }
+            else if (Images.Count > 1)
+            {
+                StartAutoSlide();
+            }
+        }
+    }
 
     private int currentIndex;
     private CancellationTokenSource? _cts;
 
     protected override void OnInitialized()
     {
-        if (AutoSlide && Images.Count > 1)
+        if (AutoSlideEnabled && Images.Count > 1)
         {
             StartAutoSlide();
         }
@@ -72,21 +91,17 @@
 
     private void ShowNext()
     {
-        if (Images.Count <= 1)
-            return;
-
+        if (Images.Count <= 1) return;
         currentIndex = (currentIndex + 1) % Images.Count;
-        if (AutoSlide)
+        if (AutoSlideEnabled)
             StartAutoSlide();
     }
 
     private void ShowPrevious()
     {
-        if (Images.Count <= 1)
-            return;
-
+        if (Images.Count <= 1) return;
         currentIndex = (currentIndex - 1 + Images.Count) % Images.Count;
-        if (AutoSlide)
+        if (AutoSlideEnabled)
             StartAutoSlide();
     }
 

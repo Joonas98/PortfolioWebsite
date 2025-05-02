@@ -1,21 +1,36 @@
 ﻿@namespace Components
-@inherits LayoutComponentBase
+@inject NavigationManager NavManager
 
 <div class="navbar">
-    <a class="nav-item" href="#bio">
+    <button class="nav-item" @onclick="@(() => NavManager.NavigateTo("#bio"))">
         <span class="nav-tooltip">Bio</span>
         <img src="Icons/fluent-color--home-32.svg" alt="Bio" />
-    </a>
-    <a class="nav-item" href="#experience">
+    </button>
+    <button class="nav-item" @onclick="@(() => NavManager.NavigateTo("#experience"))">
         <span class="nav-tooltip">Experience</span>
         <img src="Icons/fluent-color--toolbox-32.svg" alt="Experience" />
-    </a>
-    <a class="nav-item" href="#education">
+    </button>
+    <button class="nav-item" @onclick="@(() => NavManager.NavigateTo("#education"))">
         <span class="nav-tooltip">Education</span>
         <img src="Icons/fluent-color--book-open-32.svg" alt="Education" />
-    </a>
-    <a class="nav-item" href="#projects">
+    </button>
+    <button class="nav-item" @onclick="@(() => NavManager.NavigateTo("#projects"))">
         <span class="nav-tooltip">Projects</span>
         <img src="Icons/fluent-color--code-block-32.svg" alt="Projects" />
-    </a>
+    </button>
+
+    <button class="nav-item toggle" @onclick="ToggleAutoSlide">
+        <span class="nav-tooltip">@Tooltip</span>
+        <img src="@Icon" alt="Toggle autoplay" />
+    </button>
 </div>
+
+@code {
+    [Parameter] public bool AutoSlideEnabled { get; set; }
+    [Parameter] public EventCallback ToggleAutoSlide { get; set; }
+
+    private string Icon => AutoSlideEnabled
+        ? "Icons/fluent-color--image-32.svg"
+        : "Icons/fluent-color--image-off-32.svg";
+    private string Tooltip => AutoSlideEnabled ? "Autoplay On" : "Autoplay Off";
+}
