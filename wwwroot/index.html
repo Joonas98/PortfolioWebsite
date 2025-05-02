@@ -7,18 +7,40 @@
     <title>PortfolioWebsite</title>
     <base href="/" />
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/images.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
 
+    <!-- Vanta.js / Fog dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+
+    <!-- Vanta container styling -->
+    <style>
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Vanta FOG background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Blazor application root -->
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
@@ -32,6 +54,24 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
+    <!-- Initialize Vanta FOG -->
+    <script>
+        VANTA.FOG({
+            el: "#vanta-bg",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x343419,
+            midtoneColor: 0xf140f,
+            lowlightColor: 0x0,
+            baseColor: 0x0
+        })
+    </script>
+
+    <!-- Boot Blazor WebAssembly -->
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
 
