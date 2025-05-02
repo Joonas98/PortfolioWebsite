@@ -88,6 +88,15 @@ h2 {
         text-align: left;
     }
 
+    .experience-details a {
+        color: #4ea8de;
+        text-decoration: none;
+    }
+
+        .experience-details a:hover {
+            text-decoration: underline;
+        }
+
 /* Logo container is fixed in size and maintains a square (1:1 aspect ratio) */
 .experience-logo-container {
     height: 200px;

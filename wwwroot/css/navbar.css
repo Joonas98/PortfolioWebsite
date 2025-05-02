@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.05s;
     background: #333;
 }
 
@@ -33,7 +33,11 @@
     }
 
     .nav-item:hover {
-        background: #444;
+        background: #443;
+    }
+
+    .nav-item:active {
+        background: #222;
     }
 
 .nav-tooltip {

@@ -31,14 +31,14 @@
 
     .image-display .slide-footer {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.9);
+        padding: 0.5rem 0.5rem;
+        border-radius: 4px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 0.5rem;
         gap: 1rem;
         pointer-events: none;
         z-index: 2;
@@ -50,7 +50,7 @@
             background: none;
             border: none;
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 2rem;
             line-height: 1;
             cursor: pointer;
             padding: 0 0.5rem;
@@ -64,24 +64,21 @@
 
         .image-display .slide-footer .slide-index {
             color: #fff;
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: bold;
         }
 
     .image-display .slide-caption {
         position: absolute;
-        bottom: 2.5rem;
+        top: 15px;
         left: 50%;
         transform: translateX(-50%);
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
         color: #fff;
-        font-size: 0.9rem;
-        padding: 0.25rem 0.75rem;
+        font-size: 2rem;
+        padding: 0.4rem 0.4rem;
         border-radius: 4px;
-        max-width: 90%;
-        text-align: center;
         pointer-events: none;
-        z-index: 2;
     }
 
 /* Bio image overrides */

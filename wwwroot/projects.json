@@ -17,17 +17,17 @@
     "Images": [
       {
         "Url": "/images/projectforsaken/screenshot2.png",
-        "Description": "This is the first screen shot",
+        "Description": "Many Gameplay Features",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/projectforsaken/screenshot4.png",
-        "Description": "This is the second screen shot",
+        "Description": "Ragdolls, Explosives & Abilities",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/projectforsaken/screenshot5.png",
-        "Description": "This is the third screen shot",
+        "Description": "Unique Graphics & Atmosphere",
         "Alt": "Screenshot"
       }
     ]
@@ -58,17 +58,17 @@
     "Images": [
       {
         "Url": "/images/SprintPlanningTool/SprintPlanningScreenshot1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Landing Page",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SprintPlanningTool/SprintPlanningScreenshot2.png",
-        "Description": "This is the second screen shot",
+        "Description": "Planning View",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SprintPlanningTool/SprintPlanningScreenshot3.png",
-        "Description": "This is the third screen shot",
+        "Description": "SM Finished the Voting",
         "Alt": "Screenshot"
       }
     ]
@@ -95,7 +95,7 @@
     "Images": [
       {
         "Url": "/images/MortgageCalculator/MortageDemo.png",
-        "Description": "This is the first screen shot",
+        "Description": "Clean interface and responsive usage",
         "Alt": "Screenshot"
       }
     ]
@@ -118,27 +118,27 @@
     "Images": [
       {
         "Url": "/images/PiHole/PiholeExplained.png",
-        "Description": "This is the first screen shot",
+        "Description": "Network Diagram",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/PiHole/RaspBerry3.png",
-        "Description": "This is the second screen shot",
+        "Description": "Pi-Hole Dashboard",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/PiHole/RaspBerry5.png",
-        "Description": "This is the third screen shot",
+        "Description": "Blocklists",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/PiHole/RaspBerry7.png",
-        "Description": "This is the third screen shot",
+        "Description": "Blocked Network Activity",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/PiHole/RaspSetup2.jpg",
-        "Description": "This is the third screen shot",
+        "Description": "Hardware – Raspberry Pi 3",
         "Alt": "Screenshot"
       }
     ]
@@ -157,17 +157,17 @@
     "Images": [
       {
         "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Showcase Page",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot2.png",
-        "Description": "This is the first screen shot",
+        "Description": "Resume Page",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot3.png",
-        "Description": "This is the first screen shot",
+        "Description": "Game Project Page",
         "Alt": "Screenshot"
       }
     ]
@@ -186,32 +186,32 @@
     "Images": [
       {
         "Url": "/images/SAMProject/SAM1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Main View",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SAMProject/SAMMain3.png",
-        "Description": "This is the first screen shot",
+        "Description": "Announcement Control",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SAMProject/SAMMain4.png",
-        "Description": "This is the first screen shot",
+        "Description": "Alerts",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SAMProject/SAMMain5.png",
-        "Description": "This is the first screen shot",
+        "Description": "Simulated Surveillance",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SAMProject/SAMMain9.png",
-        "Description": "This is the first screen shot",
+        "Description": "Simulated Storm Event",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SAMProject/SAMStart4.png",
-        "Description": "This is the first screen shot",
+        "Description": "Logs From Previous Shift",
         "Alt": "Screenshot"
       }
     ]
@@ -230,17 +230,17 @@
     "Images": [
       {
         "Url": "/images/NewsReacts/NewsReactsBasic.png",
-        "Description": "This is the first screen shot",
+        "Description": "Gameplay Screenshot",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/NewsReacts/NewsReactsKeybinds.png",
-        "Description": "This is the first screen shot",
+        "Description": "Keybinds",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/NewsReacts/NewsReactsMap.png",
-        "Description": "This is the first screen shot",
+        "Description": "Interactive Map",
         "Alt": "Screenshot"
       }
     ]
@@ -259,32 +259,32 @@
     "Images": [
       {
         "Url": "/images/InnovationProject/PythonData3.png",
-        "Description": "This is the first screen shot",
+        "Description": "Some Input Data",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/InnovationProject/PythonData7.png",
-        "Description": "This is the first screen shot",
+        "Description": "Confusion Matrixes",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/InnovationProject/PythonData9.png",
-        "Description": "This is the first screen shot",
+        "Description": "Clustering",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/InnovationProject/PythonDataCombined.png",
-        "Description": "This is the first screen shot",
+        "Description": "Data Visualization",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/InnovationProject/PythonDataCombined2.png",
-        "Description": "This is the first screen shot",
+        "Description": "Various Data Plots",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/InnovationProject/PythonDataCombined3.png",
-        "Description": "This is the first screen shot",
+        "Description": "3D Graphs & Feature Importance",
         "Alt": "Screenshot"
       }
     ]
@@ -303,7 +303,7 @@
     "Images": [
       {
         "Url": "/images/OpenGL/OpenGL1.png",
-        "Description": "This is the first screen shot",
+        "Description": "3D Scene Rendering",
         "Alt": "Screenshot"
       }
     ]
@@ -322,7 +322,7 @@
     "Images": [
       {
         "Url": "/images/NaS/NaS1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Gameplay Screenshot",
         "Alt": "Screenshot"
       }
     ]
@@ -349,7 +349,7 @@
     "Images": [
       {
         "Url": "/images/Chess/ChessGameTree.png",
-        "Description": "This is the first screen shot",
+        "Description": "Chess Game Trees Visualized",
         "Alt": "Screenshot"
       }
     ]
@@ -368,17 +368,17 @@
     "Images": [
       {
         "Url": "/images/CollisionDetection/CollisionDetection1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Moving & Static Objects",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/CollisionDetection/CollisionDetection2.png",
-        "Description": "This is the first screen shot",
+        "Description": "Accurate Simulation",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/CollisionDetection/CollisionDetection3.png",
-        "Description": "This is the first screen shot",
+        "Description": "Trajectories & Elasticity",
         "Alt": "Screenshot"
       }
     ]
@@ -397,17 +397,17 @@
     "Images": [
       {
         "Url": "/images/BnB/BnB1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Gameplay Screenshot",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/BnB/BnB4.png",
-        "Description": "This is the first screen shot",
+        "Description": "Game Over",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/BnB/BnB5.png",
-        "Description": "This is the first screen shot",
+        "Description": "Main Menu",
         "Alt": "Screenshot"
       }
     ]
@@ -426,32 +426,32 @@
     "Images": [
       {
         "Url": "/images/Grainraiders/GR1.png",
-        "Description": "This is the first screen shot",
+        "Description": "Short Story",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/Grainraiders/GR4.png",
-        "Description": "This is the first screen shot",
+        "Description": "Defend Your Food",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/Grainraiders/GR5.png",
-        "Description": "This is the first screen shot",
+        "Description": "Loot Enemies",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/Grainraiders/GR6.png",
-        "Description": "This is the first screen shot",
+        "Description": "Basic Shop",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/Grainraiders/GR7.png",
-        "Description": "This is the first screen shot",
+        "Description": "Explosives & Ragdolls",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/Grainraiders/GR8.png",
-        "Description": "This is the first screen shot",
+        "Description": "Endless Waves With Highscores",
         "Alt": "Screenshot"
       }
     ]
@@ -470,12 +470,12 @@
     "Images": [
       {
         "Url": "/images/SUMO/sumorobotpath.png",
-        "Description": "This is the first screen shot",
+        "Description": "Follow Path",
         "Alt": "Screenshot"
       },
       {
         "Url": "/images/SUMO/sumorobotring.png",
-        "Description": "This is the first screen shot",
+        "Description": "Push Opponents Out",
         "Alt": "Screenshot"
       }
     ]
