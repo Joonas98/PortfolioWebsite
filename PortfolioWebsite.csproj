@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include=".nojekyll" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\contacts.css" />
     <None Include="wwwroot\css\images.css" />
     <None Include="wwwroot\css\main.css" />
