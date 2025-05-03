@@ -1,6 +1,7 @@
 ﻿@namespace Components
 @using PortfolioWebsite.Models
 @implements IDisposable
+@inject NavigationManager Nav
 
 <div class="image-display @CssClass">
     @if (Images?.Any() == true)
@@ -9,7 +10,7 @@
         {
             var item = Images[i];
             <div class="slide @(i == currentIndex ? "active" : string.Empty)">
-                <img src="@item.Url" alt="@item.Alt" />
+                <img src="@(Nav.BaseUri + item.Url)" alt="@item.Alt" />
 
                 @if (Images.Count > 1)
                 {
