@@ -6,8 +6,8 @@
 
 /* Style each project card as a two-column layout */
 .project-card {
-    background: #222;
-    color: #fff;
+    background-color: var(--card-bg-color);
+    backdrop-filter: var(--card-backdrop-blur);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
@@ -39,7 +39,7 @@
 
     .project-details h3 {
         margin: 0;
-        color: #ffff32;
+        color: var(--accent-yellow);
     }
 
     .project-details p {
@@ -48,7 +48,7 @@
     }
 
     .project-details a {
-        color: #4ea8de;
+        color: var(--text-link);
         text-decoration: none;
     }
 
