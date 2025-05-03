@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Publishing folder, ignore form master keep for gh-pages branch which is deployment
+dist/
+
 # User-specific files
 *.rsuser
 *.suo
