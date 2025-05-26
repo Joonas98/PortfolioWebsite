@@ -60,7 +60,7 @@
 
     <!-- Initialize Vanta FOG with animated highlightColor -->
     <script>
-        // 1. Kick off the Vanta instance, leave all other colors static:
+        // 1. Initialize with placeholder values (they’ll be overwritten immediately):
         const vanta = VANTA.FOG({
             el: "#vanta-bg",
             mouseControls: false,
@@ -68,33 +68,39 @@
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
-            highlightColor: 0x343419, 
-            midtoneColor: 0x0f140f,
-            lowlightColor: 0x000000, 
+            highlightColor: 0xFACC15,
+            midtoneColor: 0xCC15FA,
+            lowlightColor: 0x000000,
             baseColor: 0x000000
         });
 
-        // 2. Begin cycling the hue for just the highlightColor:
-        let hue = 60; // start around original #343419
+        // 2. Animate two complementary hues:
+        let hue = 0;
+        function animateColors() {
+            // advance hue, wrap at 360
+            hue = (hue + 0.01) % 360;
 
-        function animateHighlightColor() {
-            // advance hue and wrap
-            hue = (hue + 0.15) % 360;
+            // primary hue → highlight (bright)
+            const { r: hr, g: hg, b: hb } = hslToRgb(hue / 360, 0.7, 0.4);
+            // complementary hue (180° opposite) → midtone
+            const compHue = (hue + 180) % 360;
+            const { r: mr, g: mg, b: mb } = hslToRgb(compHue / 360, 0.7, 0.2);
 
-            // convert HSL → RGB
-            const { r, g, b } = hslToRgb(hue / 360, 0.6, 0.1);
+            // pack into hex
+            const highlightHex = (hr << 16) | (hg << 8) | hb;
+            const midtoneHex = (mr << 16) | (mg << 8) | mb;
 
-            // pack into 0xRRGGBB integer
-            const colorHex = (r << 16) | (g << 8) | b;
+            // update both
+            vanta.setOptions({
+                highlightColor: highlightHex,
+                midtoneColor: midtoneHex
+            });
 
-            // update only highlightColor
-            vanta.setOptions({ highlightColor: colorHex });
-
-            requestAnimationFrame(animateHighlightColor);
+            requestAnimationFrame(animateColors);
         }
-        animateHighlightColor();
+        animateColors();
 
-        // helper to convert normalized H, S, L → {r,g,b}
+        // helper: normalized H, S, L -> {r,g,b}
         function hslToRgb(h, s, l) {
             if (s === 0) {
                 const val = Math.round(l * 255);
@@ -110,10 +116,11 @@
             };
             const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
             const p = 2 * l - q;
-            const r = hue2rgb(p, q, h + 1 / 3);
-            const g = hue2rgb(p, q, h);
-            const b = hue2rgb(p, q, h - 1 / 3);
-            return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
+            return {
+                r: Math.round(hue2rgb(p, q, h + 1 / 3) * 255),
+                g: Math.round(hue2rgb(p, q, h) * 255),
+                b: Math.round(hue2rgb(p, q, h - 1 / 3) * 255)
+            };
         }
     </script>
 
