@@ -5,7 +5,6 @@
 
     .contact-list li {
         margin-bottom: 10px;
-        font-size: 24px;
         display: flex;
         align-items: center;
     }
