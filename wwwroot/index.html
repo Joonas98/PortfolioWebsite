@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortfolioWebsite</title>
+    <base href="/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Icons/BG.png">
+
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/images.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+
+    <!-- Vanta.js / Fog dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+
+    <!-- Vanta container styling -->
+    <style>
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Vanta FOG background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Blazor application root -->
+    <div id="app">
+        <!-- This blazor default loading spinner is awful :D -->
+        <!--<svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>-->
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <!-- Initialize Vanta FOG with animated highlightColor -->
+    <script>
+        // 1. Initialize with placeholder values (they’ll be overwritten immediately):
+        const vanta = VANTA.FOG({
+            el: "#vanta-bg",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xFACC15,
+            midtoneColor: 0xCC15FA,
+            lowlightColor: 0x000000,
+            baseColor: 0x000000
+        });
+
+        // 2. Animate two complementary hues:
+        let hue = 0;
+        const sat = 0.7;
+        const lum = 0.4;
+        const lumWh = 0.75;  // lightness for the “whiter” version
+
+        function animateColors() {
+            // advance hue, wrap at 360
+            hue = (hue + 0.01) % 360;
+
+            // primary highlight (normal lightness)
+            const { r: hr, g: hg, b: hb } = hslToRgb(hue / 360, sat, lum);
+            // complementary midtone
+            const compHue = (hue + 180) % 360;
+            const { r: mr, g: mg, b: mb } = hslToRgb(compHue / 360, sat, lum * 0.5);
+
+            // whiter highlight (higher lightness)
+            const { r: lr, g: lg, b: lb } = hslToRgb(hue / 360, sat, lumWh);
+
+            // pack into hex ints
+            const highlightHex = (hr << 16) | (hg << 8) | hb;
+            const midtoneHex = (mr << 16) | (mg << 8) | mb;
+            const whiterHex = (lr << 16) | (lg << 8) | lb;
+
+            // update Vanta
+            vanta.setOptions({
+                highlightColor: highlightHex,
+                midtoneColor: midtoneHex
+            });
+
+            // convert to 6-digit hex strings
+            const hl = highlightHex.toString(16).padStart(6, '0');
+            const mt = midtoneHex.toString(16).padStart(6, '0');
+            const wt = whiterHex.toString(16).padStart(6, '0');
+
+            // push into CSS vars
+            const root = document.documentElement.style;
+            root.setProperty('--vanta-highlight', `#${hl}`);
+            root.setProperty('--vanta-midtone', `#${mt}`);
+            root.setProperty('--vanta-highlight-whiter', `#${wt}`);
+
+            requestAnimationFrame(animateColors);
+        }
+        animateColors();
+
+        // helper: normalized H, S, L -> {r,g,b}
+        function hslToRgb(h, s, l) {
+            if (s === 0) {
+                const val = Math.round(l * 255);
+                return { r: val, g: val, b: val };
+            }
+            const hue2rgb = (p, q, t) => {
+                if (t < 0) t += 1;
+                if (t > 1) t -= 1;
+                if (t < 1 / 6) return p + (q - p) * 6 * t;
+                if (t < 1 / 2) return q;
+                if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+                return p;
+            };
+            const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+            const p = 2 * l - q;
+            return {
+                r: Math.round(hue2rgb(p, q, h + 1 / 3) * 255),
+                g: Math.round(hue2rgb(p, q, h) * 255),
+                b: Math.round(hue2rgb(p, q, h - 1 / 3) * 255)
+            };
+        }
+    </script>
+
+    <!-- Boot Blazor WebAssembly -->
+    <script src="_framework/blazor.webassembly.js"></script>
+
+    <!-- The website has Blazor & VANTA JS that need JavaScript. If JS is disabled, let the user know -->
+    <noscript>
+        <style>
+            #vanta-bg {
+                display: none !important;
+            }
+
+            body {
+                background: url("/images/StaticTexture.png") repeat, linear-gradient(135deg, #111111 0%, #202020 100%);
+                background-size: 256px 256px, cover;
+            }
+        </style>
+        <div style="
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 2rem 3rem;
+    z-index: 10000;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 90%;
+    line-height: 1.4;
+  ">
+            JavaScript is disabled in your browser.
+            For the best experience, please enable JavaScript.
+        </div>
+    </noscript>
+
+</body>
+
+</html>
