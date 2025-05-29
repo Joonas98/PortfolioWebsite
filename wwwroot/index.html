@@ -45,6 +45,7 @@
 
     <!-- Blazor application root -->
     <div id="app">
+        <!-- This blazor default loading spinner is awful :D -->
         <!--<svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
             <circle r="40%" cx="50%" cy="50%" />
@@ -76,25 +77,44 @@
 
         // 2. Animate two complementary hues:
         let hue = 0;
+        const sat = 0.7;
+        const lum = 0.4;
+        const lumWh = 0.75;  // lightness for the “whiter” version
+
         function animateColors() {
             // advance hue, wrap at 360
             hue = (hue + 0.01) % 360;
 
-            // primary hue → highlight (bright)
-            const { r: hr, g: hg, b: hb } = hslToRgb(hue / 360, 0.7, 0.4);
-            // complementary hue (180° opposite) → midtone
+            // primary highlight (normal lightness)
+            const { r: hr, g: hg, b: hb } = hslToRgb(hue / 360, sat, lum);
+            // complementary midtone
             const compHue = (hue + 180) % 360;
-            const { r: mr, g: mg, b: mb } = hslToRgb(compHue / 360, 0.7, 0.2);
+            const { r: mr, g: mg, b: mb } = hslToRgb(compHue / 360, sat, lum * 0.5);
 
-            // pack into hex
+            // whiter highlight (higher lightness)
+            const { r: lr, g: lg, b: lb } = hslToRgb(hue / 360, sat, lumWh);
+
+            // pack into hex ints
             const highlightHex = (hr << 16) | (hg << 8) | hb;
             const midtoneHex = (mr << 16) | (mg << 8) | mb;
+            const whiterHex = (lr << 16) | (lg << 8) | lb;
 
-            // update both
+            // update Vanta
             vanta.setOptions({
                 highlightColor: highlightHex,
                 midtoneColor: midtoneHex
             });
+
+            // convert to 6-digit hex strings
+            const hl = highlightHex.toString(16).padStart(6, '0');
+            const mt = midtoneHex.toString(16).padStart(6, '0');
+            const wt = whiterHex.toString(16).padStart(6, '0');
+
+            // push into CSS vars
+            const root = document.documentElement.style;
+            root.setProperty('--vanta-highlight', `#${hl}`);
+            root.setProperty('--vanta-midtone', `#${mt}`);
+            root.setProperty('--vanta-highlight-whiter', `#${wt}`);
 
             requestAnimationFrame(animateColors);
         }

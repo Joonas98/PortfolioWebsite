@@ -39,7 +39,8 @@
 
     .project-details h3 {
         margin: 0;
-        color: var(--accent-yellow);
+        /* color: var(--accent-yellow); */
+        color: var(--vanta-highlight-whiter);
     }
 
     .project-details p {
