@@ -9,6 +9,8 @@
     align-items: center;
     padding: 10px 5px;
     gap: 10px;
+    z-index: 9999;
+    overflow: visible;
 }
 
 .nav-item {
@@ -22,6 +24,8 @@
     justify-content: center;
     text-decoration: none;
     transition: background 0.05s;
+    position: relative;
+    overflow: visible;
 }
 
     .nav-item img {
@@ -48,6 +52,8 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s;
+    pointer-events: none;
+    z-index: 10000;
 }
 
 .nav-item:hover .nav-tooltip {
