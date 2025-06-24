@@ -3,13 +3,13 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 60px;
+    width: 3.2vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: left;
     padding: 10px 5px;
-    gap: 10px;
+    gap: 0.8vh;
     z-index: 9999;
     overflow: visible;
     background: none; /* no solid background */
@@ -18,8 +18,8 @@
 
 /* Each nav‐item styled like a frosted‐glass card */
 .nav-item {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 100%;
     border-radius: 12px;
     background-color: var(--card-bg-color);
     backdrop-filter: var(--card-backdrop-blur);
@@ -35,8 +35,8 @@
     /* Icon sizing inside each button */
     .nav-item img,
     .nav-item svg {
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
     }
 
     /* Hover: lift & highlight like main cards */
@@ -55,7 +55,7 @@
 /* Tooltip styling (unchanged) */
 .nav-tooltip {
     position: absolute;
-    left: 70px;
+    left: 110%; /* Over 100% so doesn't feel to crammed or tight */
     background: #222;
     color: #fff;
     padding: 5px 10px;
@@ -65,7 +65,7 @@
     visibility: hidden;
     transition: opacity 0.2s;
     pointer-events: none;
-    z-index: 10000;
+    z-index: 10000; /* Tooltips should always be on top of everything */
 }
 
 .nav-item:hover .nav-tooltip {
