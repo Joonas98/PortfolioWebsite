@@ -1,4 +1,5 @@
-﻿.navbar {
+﻿/* Sidebar container stays transparent */
+.navbar {
     position: fixed;
     left: 0;
     top: 0;
@@ -11,36 +12,47 @@
     gap: 10px;
     z-index: 9999;
     overflow: visible;
+    background: none; /* no solid background */
+    backdrop-filter: none; /* preserve visibility of page behind */
 }
 
+/* Each nav‐item styled like a frosted‐glass card */
 .nav-item {
-    font-size: 36px;
     width: 60px;
     height: 60px;
-    background: #333;
     border-radius: 12px;
+    background-color: var(--card-bg-color);
+    backdrop-filter: var(--card-backdrop-blur);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    transition: background 0.05s;
+    transition: box-shadow 0.2s, background-color 0.2s;
     position: relative;
     overflow: visible;
 }
 
-    .nav-item img {
-        width: 100%;
-        height: 100%;
+    /* Icon sizing inside each button */
+    .nav-item img,
+    .nav-item svg {
+        width: 90%;
+        height: 90%;
     }
 
+    /* Hover: lift & highlight like main cards */
     .nav-item:hover {
-        background: #443;
+        box-shadow: 0 0 12px var(--accent-yellow);
+        background-color: rgba(10, 10, 10, 0.45);
     }
 
+    /* Active/pressed state */
     .nav-item:active {
-        background: #222;
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        background-color: rgba(10, 10, 10, 0.55);
     }
 
+/* Tooltip styling (unchanged) */
 .nav-tooltip {
     position: absolute;
     left: 70px;
@@ -61,6 +73,7 @@
     visibility: visible;
 }
 
+/* Push toggle to bottom */
 .toggle {
     margin-top: auto;
     margin-bottom: 25px;
