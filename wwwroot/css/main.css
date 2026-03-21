@@ -141,9 +141,13 @@ h2 {
 }
 
 .content {
-    margin-left: 25px; /* Space for the navbar */
-    padding: 10px;
+    margin-left: 3%; /* Space for the navbar */
+    padding: 1%;
     flex-grow: 1;
+}
+
+.image-display {
+    height: 40rem;
 }
 
 /* Blazor error stuff */
@@ -169,3 +173,31 @@ h2 {
     #blazor-error-ui.show {
         display: block !important; /* Blazor only shows it when needed */
     }
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        margin-top: 70px; /* space navbarille */
+    }
+
+    .bio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .image-display {
+        height: 200px;
+    }
+
+    .project-image .image-display {
+        height: 200px;
+    }
+
+    .main-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
