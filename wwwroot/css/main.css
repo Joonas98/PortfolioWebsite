@@ -2,6 +2,7 @@
 :root {
     --card-bg-color: rgba(10, 10, 10, 0.35);
     --card-backdrop-blur: blur(50px);
+
     /* neutral text */
     --text-light: #E0E0E0;
     --text-muted: #B0B0B0;
@@ -75,13 +76,14 @@ h2 {
 /* Overall card layout: text on the left, logo on the right */
 .experience-item {
     display: flex;
-    justify-content: space-between; /* Keeps the text and logo apart */
-    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: var(--card-bg-color);
     backdrop-filter: var(--card-backdrop-blur);
     padding: 1.5rem;
     border-radius: 12px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -93,19 +95,18 @@ h2 {
 
 /* Container for the text block */
 .experience-details {
-    display: block; /* Block layout ensures each child element is on its own row */
-    flex: 1; /* Take up available horizontal space */
-    margin-right: 15px; /* Space between text and the logo */
+    display: block;
+    flex: 1;
+    margin-right: 15px;
 }
 
-    /* Clear styling for the title and paragraphs */
     .experience-details h3 {
-        margin: 0 0 10px 0; /* Margin below the title */
-        text-align: left; /* Explicit text alignment */
+        margin: 0 0 10px 0;
+        text-align: left;
     }
 
     .experience-details p {
-        margin: 0 0 16px 0; /* Margin-bottom for each paragraph, ensuring each is its own row */
+        margin: 0 0 16px 0;
         text-align: left;
     }
 
@@ -118,21 +119,23 @@ h2 {
             text-decoration: underline;
         }
 
-/* Logo container is fixed in size and maintains a square (1:1 aspect ratio) */
 .experience-logo-container {
     height: 200px;
     width: 200px;
-    flex-shrink: 0; /* Prevents the container from shrinking when space is tight */
-    border-radius: 16px; /* Optional: matches your other image styling */
+    flex-shrink: 0;
+    border-radius: 12px;
     align-self: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Logo styles */
 .experience-logo {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensures the logo scales correctly within the container */
-    border-radius: 16px; /* Optional: matches your other image styling */
+    object-fit: cover;
+    border-radius: 0;
 }
 
 
@@ -184,6 +187,14 @@ h2 {
         grid-template-columns: 1fr;
     }
 
+    .bio-image {
+        height: auto;
+    }
+
+        .bio-image .image-display {
+            height: 600px;
+        }
+
     .project-card {
         flex-direction: column;
     }
@@ -199,5 +210,16 @@ h2 {
     .main-container {
         max-width: 100%;
         padding: 10px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-logo-container {
+        width: 50%;
+        height: auto;
+        margin-top: 10px;
     }
 }
