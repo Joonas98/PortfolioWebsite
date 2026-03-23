@@ -16,17 +16,17 @@
     ],
     "Images": [
       {
-        "Url": "/images/ProjectForsaken/Screenshot2.png",
+        "Url": "/images/ProjectForsaken/Screenshot2.jpg",
         "Description": "Many Gameplay Features",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/ProjectForsaken/Screenshot4.png",
+        "Url": "/images/ProjectForsaken/Screenshot4.jpg",
         "Description": "Ragdolls, Explosives & Abilities",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/ProjectForsaken/Screenshot5.png",
+        "Url": "/images/ProjectForsaken/Screenshot5.jpg",
         "Description": "Unique Graphics & Atmosphere",
         "Alt": "Screenshot"
       }
@@ -117,22 +117,22 @@
     ],
     "Images": [
       {
-        "Url": "/images/PiHole/PiholeExplained.png",
+        "Url": "/images/PiHole/PiholeExplained.jpg",
         "Description": "Network Diagram",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/PiHole/RaspBerry3.png",
+        "Url": "/images/PiHole/RaspBerry3.jpg",
         "Description": "Pi-Hole Dashboard",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/PiHole/RaspBerry5.png",
+        "Url": "/images/PiHole/RaspBerry5.jpg",
         "Description": "Blocklists",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/PiHole/RaspBerry7.png",
+        "Url": "/images/PiHole/RaspBerry7.jpg",
         "Description": "Blocked Network Activity",
         "Alt": "Screenshot"
       },
@@ -156,17 +156,17 @@
     ],
     "Images": [
       {
-        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot1.png",
+        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot1.jpg",
         "Description": "Showcase Page",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot2.png",
+        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot2.jpg",
         "Description": "Resume Page",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot3.png",
+        "Url": "/images/BanaaniGamesWebsite/BanaaniGamesScreenshot3.jpg",
         "Description": "Game Project Page",
         "Alt": "Screenshot"
       }
@@ -185,32 +185,32 @@
     ],
     "Images": [
       {
-        "Url": "/images/SAMProject/SAM1.png",
+        "Url": "/images/SAMProject/SAM1.jpg",
         "Description": "Main View",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/SAMProject/SAMMain3.png",
+        "Url": "/images/SAMProject/SAMMain3.jpg",
         "Description": "Announcement Control",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/SAMProject/SAMMain4.png",
+        "Url": "/images/SAMProject/SAMMain4.jpg",
         "Description": "Alerts",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/SAMProject/SAMMain5.png",
+        "Url": "/images/SAMProject/SAMMain5.jpg",
         "Description": "Simulated Surveillance",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/SAMProject/SAMMain9.png",
+        "Url": "/images/SAMProject/SAMMain9.jpg",
         "Description": "Simulated Storm Event",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/SAMProject/SAMStart4.png",
+        "Url": "/images/SAMProject/SAMStart4.jpg",
         "Description": "Logs From Previous Shift",
         "Alt": "Screenshot"
       }
@@ -229,17 +229,17 @@
     ],
     "Images": [
       {
-        "Url": "/images/NewsReacts/NewsReactsBasic.png",
+        "Url": "/images/NewsReacts/NewsReactsBasic.jpg",
         "Description": "Gameplay Screenshot",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/NewsReacts/NewsReactsKeybinds.png",
+        "Url": "/images/NewsReacts/NewsReactsKeybinds.jpg",
         "Description": "Keybinds",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/NewsReacts/NewsReactsMap.png",
+        "Url": "/images/NewsReacts/NewsReactsMap.jpg",
         "Description": "Interactive Map",
         "Alt": "Screenshot"
       }
@@ -273,17 +273,17 @@
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/InnovationProject/PythonDataCombined.png",
+        "Url": "/images/InnovationProject/PythonDataCombined.jpg",
         "Description": "Data Visualization",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/InnovationProject/PythonDataCombined2.png",
+        "Url": "/images/InnovationProject/PythonDataCombined2.jpg",
         "Description": "Various Data Plots",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/InnovationProject/PythonDataCombined3.png",
+        "Url": "/images/InnovationProject/PythonDataCombined3.jpg",
         "Description": "3D Graphs & Feature Importance",
         "Alt": "Screenshot"
       }
@@ -321,7 +321,7 @@
     ],
     "Images": [
       {
-        "Url": "/images/NaS/NaS1.png",
+        "Url": "/images/NaS/NaS1.jpg",
         "Description": "Gameplay Screenshot",
         "Alt": "Screenshot"
       }
@@ -348,7 +348,7 @@
     ],
     "Images": [
       {
-        "Url": "/images/Chess/ChessGameTree.png",
+        "Url": "/images/Chess/ChessGameTree.jpg",
         "Description": "Chess Game Trees Visualized",
         "Alt": "Screenshot"
       }
@@ -367,17 +367,17 @@
     ],
     "Images": [
       {
-        "Url": "/images/CollisionDetection/CollisionDetection1.png",
+        "Url": "/images/CollisionDetection/CollisionDetection1.jpg",
         "Description": "Moving & Static Objects",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/CollisionDetection/CollisionDetection2.png",
+        "Url": "/images/CollisionDetection/CollisionDetection2.jpg",
         "Description": "Accurate Simulation",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/CollisionDetection/CollisionDetection3.png",
+        "Url": "/images/CollisionDetection/CollisionDetection3.jpg",
         "Description": "Trajectories & Elasticity",
         "Alt": "Screenshot"
       }
@@ -425,32 +425,32 @@
     ],
     "Images": [
       {
-        "Url": "/images/Grainraiders/GR1.png",
+        "Url": "/images/Grainraiders/GR1.jpg",
         "Description": "Short Story",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/Grainraiders/GR4.png",
+        "Url": "/images/Grainraiders/GR4.jpg",
         "Description": "Defend Your Food",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/Grainraiders/GR5.png",
+        "Url": "/images/Grainraiders/GR5.jpg",
         "Description": "Loot Enemies",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/Grainraiders/GR6.png",
+        "Url": "/images/Grainraiders/GR6.jpg",
         "Description": "Basic Shop",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/Grainraiders/GR7.png",
+        "Url": "/images/Grainraiders/GR7.jpg",
         "Description": "Explosives & Ragdolls",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/Grainraiders/GR8.png",
+        "Url": "/images/Grainraiders/GR8.jpg",
         "Description": "Endless Waves With Highscores",
         "Alt": "Screenshot"
       }
@@ -469,12 +469,12 @@
     ],
     "Images": [
       {
-        "Url": "/images/SUMO/sumorobotpath.png",
+        "Url": "/images/SUMO/sumorobotpath.jpg",
         "Description": "Follow Path",
         "Alt": "Screenshot"
       },
       {
-        "Url": "/images/SUMO/sumorobotring.png",
+        "Url": "/images/SUMO/sumorobotring.jpg",
         "Description": "Push Opponents Out",
         "Alt": "Screenshot"
       }
