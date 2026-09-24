@@ -67,24 +67,21 @@ any browser console:
 
 Plain values without the prefix also work, but they are not protected from scrapers.
 
-## Running locally
+## Run your own copy
 
-The page loads its content with `fetch`, so it needs to be served over HTTP rather than opened as a file:
+To try changes to the content before publishing them, download the repository and serve the folder with any local web
+server. Opening `index.html` straight from disk won't work, because browsers block the page from loading its JSON files
+that way. For example:
 
 ```
 python -m http.server 8000
-# or
-npx serve -l 8000
 ```
 
 Then open http://localhost:8000.
 
-## Deployment
-
-The repository root is the website. GitHub Pages serves it directly from the `main` branch (**Settings → Pages →
-Deploy from a branch → `main` / root**), so every commit to `main` is live within a minute or two. Any other static
-host (Netlify, Cloudflare Pages, Vercel, a plain web server) works the same way, with no build command and the
-repository root as the output directory.
+To publish a copy, upload the repository as it is to any static host (GitHub Pages, Netlify, Cloudflare Pages or a
+plain web server). There is no build command. This site is served by GitHub Pages from the `main` branch, so every
+commit to `main` is live within a minute or two.
 
 ## Previous version
 
