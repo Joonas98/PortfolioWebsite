@@ -19,6 +19,8 @@ it into the page when it loads.
   browser when a visitor clicks *Show email* or *Show number*. They never appear as readable text in the HTML or JSON.
 - **Responsive and accessible:** works down to phone width, supports keyboard navigation and respects
   reduced-motion settings.
+- **Share-ready:** a preview image and Open Graph / Twitter tags give the site a proper card when the link is shared on
+  LinkedIn, Discord, Slack, X or WhatsApp, and structured data describes the person behind it to search engines.
 - **Lightweight:** images are WebP; the whole site is around 3.5 MB, and each page view loads only what is visible.
 
 ## Project structure
@@ -35,6 +37,10 @@ data/
   references.json     references and their contact details
 images/               photo, company logos and project screenshots
 assets/resume.pdf     resume linked from the page
+og-image.jpg          1200×630 preview image shown when the link is shared
+favicon.ico, favicon-*.png, apple-touch-icon.png, icon-*.png
+                      browser tab, home-screen and install icons
+site.webmanifest      name, colors and icons used when the site is installed or pinned
 ```
 
 ## Content format
