@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Daniel Grunér",
+    "Role": "Manager & colleague at Crosskey",
+    "Email": "enc:aWYueWVrc3NvcmNAcmVudXJnLmxlaW5hZA==",
+    "Phone": "enc:NDI4MzkyNDAyIDg1Mys=",
+    "Description": "During my time at Crosskey, Daniel was both a close colleague and my manager. Together, we discovered countless effective and innovative solutions to complex problems, ensuring that our diverse clientele remained satisfied. Beyond work, we also shared a few training sessions at the gym, which further strengthened our professional relationship and collaboration."
+  },
+  {
+    "Name": "Pekko Lindblom",
+    "Role": "Project manager, Metropolia UAS",
+    "Email": "enc:aWYuYWlsb3BvcnRlbUBtb2xiZG5pbC5va2tlcA==",
+    "Phone": "enc:MjUxMzM3NDA1IDg1Mys=",
+    "Description": "Project manager and teacher at Metropolia University of Applied Sciences, Pekko oversaw the SAM project, which I focused on for my engineering thesis. Impressed by the quality of my work, Pekko made the decision to hire me immediately after I completed my thesis. I was the only student from the project team offered a continuation contract, which I worked on for several months after graduation."
+  },
+  {
+    "Name": "Jukka Soinila",
+    "Role": "CEO & founder, Net Get Games",
+    "Email": "enc:bW9jLmxpYW1nQGFsaW5pb3MuYWtrdWo=",
+    "Phone": "enc:NjU4NTEwNTE0IDg1Mys=",
+    "Description": "CEO and founder of Net Get Games (formerly Tutanet Oy), Jukka was the boss during one of my first jobs as a game developer. He often expressed appreciation for my ability to create new systems from scratch and integrate them smoothly into the existing product."
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "Title": "Software Engineer",
+    "Organization": "SecuryCast",
+    "Period": "2025 – Present",
+    "Logo": "images/SecuryCastLogo.webp",
+    "Description": "At SecuryCast Oy, I work as a full-stack developer on a wide range of projects, including donation platforms and charity-focused websites and systems. Despite the company’s lean size, it manages significant financial flows, which requires a high level of trust, skill, and reliability from every team member. The role is highly entrepreneurial in nature, demanding initiative and self-direction in day-to-day problem solving. In addition to development, I am also responsible for driving the proper utilization and implementation of AI across the company, ensuring it supports both innovation and operational efficiency.",
+    "Technologies": [
+      "C#",
+      "TS",
+      "JS",
+      "Tailwind CSS",
+      "Web Development",
+      "AI",
+      "Git"
+    ]
+  },
+  {
+    "Title": "Software Developer",
+    "Organization": "Crosskey Banking Solutions",
+    "Period": "2023 – 2025",
+    "Logo": "images/CrosskeyLogo.webp",
+    "Description": "In this role, I developed complex financial systems using a Dynamics 365 CRM-based platform and APIs. Although I could not disclose further details due to confidentiality agreements, I shared that we served a diverse clientele—both large and small—across the Nordic countries. The systems supported hundreds of thousands of users daily, securely and reliably processing billions of euros while maintaining compliance with international and EU regulations.",
+    "Technologies": [
+      "C#",
+      "SQL",
+      "XSLT",
+      "JavaScript",
+      "CRM",
+      "Microsoft",
+      "Plugins",
+      "CI/CD",
+      "Agile",
+      "Git"
+    ]
+  },
+  {
+    "Title": "Software Developer",
+    "Organization": "Metropolia UAS, SAM-project",
+    "Period": "2022",
+    "Logo": "images/MetropoliaLogo.webp",
+    "Description": "After completing my engineering thesis, I was retained as one of the key contributors to the project. We developed a simulation for a surveillance system tailored to autonomous vehicles, with the objective of determining the number of vehicles a single operator can effectively monitor—a metric that may inform future regulatory standards.",
+    "Technologies": [
+      "Front-end development",
+      "UI & UX",
+      "C#",
+      "Unity"
+    ]
+  },
+  {
+    "Title": "Game Developer",
+    "Organization": "Net Get Games",
+    "Period": "2020 – 2022",
+    "Logo": "images/newsreacts.webp",
+    "Description": "I was hired to work on a commercial game project as part of a small indie team, where I contributed to a wide range of core mechanics and systems. Notably, I developed comprehensive menu interfaces, a robust minimap system, and various helper functions to support fellow developers.",
+    "Technologies": [
+      "Front-end development",
+      "UI & UX",
+      "C#",
+      "Unity",
+      "JavaScript"
+    ]
+  },
+  {
+    "Title": "Security Guard",
+    "Organization": "Avarn Security",
+    "Period": "2017 – 2023",
+    "Logo": "images/AvarnLogo.webp",
+    "Description": "In my role as a security guard, I provided professional and secure services to hundreds of customers, managing a range of responsibilities to uphold high safety standards and operational security. From 2022 onward, I collaborated with Nokia to ensure the safe and secure development of 5G technology.",
+    "Technologies": []
+  }
+]

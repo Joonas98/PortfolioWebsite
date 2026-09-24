@@ -1,0 +1,33 @@
+{
+  "Name": "Joonas Suuronen",
+  "Role": "Software Engineer",
+  "Location": "Espoo, Finland",
+  "Photo": "images/Joonas1.webp",
+  "Greeting": "Hello, and welcome to my portfolio website.",
+  "Intro": [
+    "I'm someone with a deep curiosity about the world — I’m genuinely interested in understanding how things work and discovering creative, out-of-the-box solutions. While I have a strong appreciation for subjects like psychology, history, and philosophy, my true passion lies in technology.",
+    "I have a solid background in programming and a constant drive to learn and grow. Software development isn’t just a job for me — it's something I genuinely enjoy. Whether for work or personal growth, I’m always involved in exciting side projects and hobby-driven development."
+  ],
+  "Quote": {
+    "Text": "Choose a job you love, and you’ll never have to work a day in your life.",
+    "Author": "Confucius",
+    "Lead": "It may be a bit of a cliché, but one quote that resonates with me comes from Confucius:"
+  },
+  "Resume": "assets/resume.pdf",
+  "Email": "enc:bW9jLmxpYW1nQDluZW5vcnV1c2o=",
+  "Phone": "enc:MzM4ODYzMDA0IDg1Mys=",
+  "Links": [
+    {
+      "Text": "GitHub",
+      "Url": "https://github.com/Joonas98"
+    },
+    {
+      "Text": "LinkedIn",
+      "Url": "https://www.linkedin.com/in/joonas-suuronen-8726ab255/"
+    },
+    {
+      "Text": "YouTube",
+      "Url": "https://www.youtube.com/@Banaaani"
+    }
+  ]
+}

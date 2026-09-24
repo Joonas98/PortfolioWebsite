@@ -1,0 +1,545 @@
+[
+  {
+    "Name": "The Forsaken",
+    "Description": "Serious game project, I have been developing as a hobby for multiple years now. I am not following a strict plan or game design document (GDD), but rather just implement a feature at the time, and experiment around what seems to work well. Some clips from this project can be found on my YouTube channel.",
+    "Technologies": [
+      "C#",
+      "Unity"
+    ],
+    "YearRange": "2022 - On going",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/The-Forsaken"
+      },
+      {
+        "Text": "YouTube",
+        "Url": "https://www.youtube.com/@Banaaani"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/ProjectForsaken/Screenshot2.webp",
+        "Description": "Many Gameplay Features",
+        "Alt": "The Forsaken: Many Gameplay Features"
+      },
+      {
+        "Url": "images/ProjectForsaken/Screenshot4.webp",
+        "Description": "Ragdolls, Explosives & Abilities",
+        "Alt": "The Forsaken: Ragdolls, Explosives & Abilities"
+      },
+      {
+        "Url": "images/ProjectForsaken/Screenshot5.webp",
+        "Description": "Unique Graphics & Atmosphere",
+        "Alt": "The Forsaken: Unique Graphics & Atmosphere"
+      }
+    ]
+  },
+  {
+    "Name": "Portfolio Website",
+    "Description": "This website serves as my personal portfolio. I previously operated under a trade name, but chose to transition to a more personal approach, as the trade name currently holds little significance. This may change in the future as I begin releasing my own commercial game projects, but for now, a portfolio under my own name better reflects my work and direction.",
+    "Technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON"
+    ],
+    "YearRange": "2025 - 2026",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/PortfolioWebsite"
+      }
+    ]
+  },
+  {
+    "Name": "Sprint Planning Tool",
+    "Description": "A real-time web application for agile sprint planning. This tool enables teams to collaboratively select story points during planning sessions. The Scrum Master oversees the session, reveals story points, and resets rounds as needed.",
+    "Technologies": [
+      "Blazor",
+      "C#",
+      "JSON"
+    ],
+    "YearRange": "2024",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/SprintPlanningTool"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/SprintPlanningTool/SprintPlanningScreenshot1.webp",
+        "Description": "Landing Page",
+        "Alt": "Sprint Planning Tool: Landing Page"
+      },
+      {
+        "Url": "images/SprintPlanningTool/SprintPlanningScreenshot2.webp",
+        "Description": "Planning View",
+        "Alt": "Sprint Planning Tool: Planning View"
+      },
+      {
+        "Url": "images/SprintPlanningTool/SprintPlanningScreenshot3.webp",
+        "Description": "SM Finished the Voting",
+        "Alt": "Sprint Planning Tool: SM Finished the Voting"
+      }
+    ]
+  },
+  {
+    "Name": "Mortgage Calculator",
+    "Description": "I created a mortgage calculation system using ASP.NET, designed to demonstrate full-stack development with a SQL database backend, a C#-based ASP.NET web interface, and Azure cloud hosting. The application features a simple UI where users can interact with fictional customer data—adding, editing, or deleting entries. A demo video is available, and the system also includes Docker support for containerized deployment. While I have shut down the website and Azure, the full source code is accessible on GitHub.",
+    "Technologies": [
+      "C#",
+      "ASP.NET",
+      "SQL",
+      "Azure"
+    ],
+    "YearRange": "2023",
+    "Links": [
+      {
+        "Text": "GitHub Main",
+        "Url": "https://github.com/Joonas98/MortagePlan"
+      },
+      {
+        "Text": "GitHub ASP DB",
+        "Url": "https://github.com/Joonas98/ASP-Database"
+      },
+      {
+        "Text": "Demo video",
+        "Url": "https://www.youtube.com/watch?v=YCX0ySlz2YI"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/MortgageCalculator/MortageDemo.webp",
+        "Description": "Clean interface and responsive usage",
+        "Alt": "Mortgage Calculator: Clean interface and responsive usage"
+      }
+    ]
+  },
+  {
+    "Name": "Homewide Adblock System",
+    "Description": "I run a Raspberry Pi 3 continuously to manage several home systems. In June 2023, I configured it with Pi-Hole, a DNS-based ad-blocking solution that filters queries from my smart devices. If a domain is found on my blocklists, the system blocks it by returning a null IP (0.0.0.0). I use a variety of curated blocklists, primarily sourced from Firebog, which target domains known for delivering ads, malware, tracking scripts, and other undesirable content. As a result, most websites either omit the blocked elements or display empty placeholders. While some platforms like YouTube and Twitch serve ads from the same domain as their content, alternative methods—such as Chromium-based browser extensions—can be used to mitigate those cases.",
+    "Technologies": [
+      "Raspberry PI",
+      "Networking"
+    ],
+    "YearRange": "2023",
+    "Links": [
+      {
+        "Text": "Pi-Hole Website",
+        "Url": "https://pi-hole.net/"
+      },
+      {
+        "Text": "Firebog Website",
+        "Url": "https://firebog.net/"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/PiHole/PiholeExplained.webp",
+        "Description": "Network Diagram",
+        "Alt": "Homewide Adblock System: Network Diagram"
+      },
+      {
+        "Url": "images/PiHole/RaspBerry3.webp",
+        "Description": "Pi-Hole Dashboard",
+        "Alt": "Homewide Adblock System: Pi-Hole Dashboard"
+      },
+      {
+        "Url": "images/PiHole/RaspBerry5.webp",
+        "Description": "Blocklists",
+        "Alt": "Homewide Adblock System: Blocklists"
+      },
+      {
+        "Url": "images/PiHole/RaspBerry7.webp",
+        "Description": "Blocked Network Activity",
+        "Alt": "Homewide Adblock System: Blocked Network Activity"
+      },
+      {
+        "Url": "images/PiHole/RaspSetup2.webp",
+        "Description": "Hardware – Raspberry Pi 3",
+        "Alt": "Homewide Adblock System: Hardware – Raspberry Pi 3"
+      }
+    ]
+  },
+  {
+    "Name": "Banaani Games Website",
+    "Description": "I have a trade name 'Banaani Games'. This was basically my old portfolio website / site for my trade name. I took it down as I wanted to create a new personal portfolio, and my trade name does not mean that much as of now.",
+    "Technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "YearRange": "2023",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/Banaani-Games-Website"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/BanaaniGamesWebsite/BanaaniGamesScreenshot1.webp",
+        "Description": "Showcase Page",
+        "Alt": "Banaani Games Website: Showcase Page"
+      },
+      {
+        "Url": "images/BanaaniGamesWebsite/BanaaniGamesScreenshot2.webp",
+        "Description": "Resume Page",
+        "Alt": "Banaani Games Website: Resume Page"
+      },
+      {
+        "Url": "images/BanaaniGamesWebsite/BanaaniGamesScreenshot3.webp",
+        "Description": "Game Project Page",
+        "Alt": "Banaani Games Website: Game Project Page"
+      }
+    ]
+  },
+  {
+    "Name": "SAM Project",
+    "Description": "Smart Autonomous Mobility (SAM) is a major initiative led by Metropolia University of Applied Sciences, in collaboration with other partner institutions, focused on developing level 4–5 autonomous vehicles—those requiring no steering wheel or pedals. I completed my engineer’s thesis as part of this project and was subsequently hired to continue contributing. My primary responsibility was designing and creating the UI/UX for an application that explores how many autonomous vehicles a single supervisor can effectively manage. The resulting design not only supported the research goals but also has potential as a foundational concept for future supervisory systems, as similar solutions are not publicly available. The project manager, Pekko, expressed strong satisfaction with my work and serves as a professional reference.",
+    "Technologies": [
+      "C#",
+      "UI & UX",
+      "Unity"
+    ],
+    "YearRange": "2022",
+    "Links": [
+      {
+        "Text": "Thesis PDF",
+        "Url": "https://www.theseus.fi/handle/10024/781688"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/SAMProject/SAM1.webp",
+        "Description": "Main View",
+        "Alt": "SAM Project: Main View"
+      },
+      {
+        "Url": "images/SAMProject/SAMMain3.webp",
+        "Description": "Announcement Control",
+        "Alt": "SAM Project: Announcement Control"
+      },
+      {
+        "Url": "images/SAMProject/SAMMain4.webp",
+        "Description": "Alerts",
+        "Alt": "SAM Project: Alerts"
+      },
+      {
+        "Url": "images/SAMProject/SAMMain5.webp",
+        "Description": "Simulated Surveillance",
+        "Alt": "SAM Project: Simulated Surveillance"
+      },
+      {
+        "Url": "images/SAMProject/SAMMain9.webp",
+        "Description": "Simulated Storm Event",
+        "Alt": "SAM Project: Simulated Storm Event"
+      },
+      {
+        "Url": "images/SAMProject/SAMStart4.webp",
+        "Description": "Logs From Previous Shift",
+        "Alt": "SAM Project: Logs From Previous Shift"
+      }
+    ]
+  },
+  {
+    "Name": "News Reacts",
+    "Description": "I worked at the indie game company Tutanet Oy (later renamed Net Get Games), where I was hired to develop a variety of features for their project. My most notable contributions included designing the menu system, implementing keybindings, and creating the map and minimap functionality. The game was developed using the Unity engine, with C# and JavaScript as the primary programming languages. It was successfully released on Steam in 2022. My work received consistently positive feedback, and the lead developer, Jukka, remains one of my professional referees.",
+    "Technologies": [
+      "C#",
+      "Unity",
+      "UI & UX",
+      "JS"
+    ],
+    "YearRange": "2020 - 2022",
+    "Links": [
+      {
+        "Text": "Steam Store",
+        "Url": "https://store.steampowered.com/app/1775300/News_Reacts/"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/NewsReacts/NewsReactsBasic.webp",
+        "Description": "Gameplay Screenshot",
+        "Alt": "News Reacts: Gameplay Screenshot"
+      },
+      {
+        "Url": "images/NewsReacts/NewsReactsKeybinds.webp",
+        "Description": "Keybinds",
+        "Alt": "News Reacts: Keybinds"
+      },
+      {
+        "Url": "images/NewsReacts/NewsReactsMap.webp",
+        "Description": "Interactive Map",
+        "Alt": "News Reacts: Interactive Map"
+      }
+    ]
+  },
+  {
+    "Name": "ML/AI DIRECTOR",
+    "Description": "This innovation project, completed in late 2021, focused on developing an intelligent game director for “Safe not Safe” (SnS), a game by Bigger Scope. The objective was to use machine learning and AI to analyze player behavior and dynamically adjust the game experience for maximum engagement. The implementation was done in Python using Jupyter Notebook, with libraries such as Pandas and NumPy. The project emphasized data processing and visualization, both of which were essential to understanding and refining player interaction patterns.",
+    "Technologies": [
+      "Python",
+      "ML",
+      "AI",
+      "Data Science"
+    ],
+    "YearRange": "2021",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/SnSFlow/tree/main"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/InnovationProject/PythonData3.webp",
+        "Description": "Some Input Data",
+        "Alt": "ML/AI DIRECTOR: Some Input Data"
+      },
+      {
+        "Url": "images/InnovationProject/PythonData7.webp",
+        "Description": "Confusion Matrixes",
+        "Alt": "ML/AI DIRECTOR: Confusion Matrixes"
+      },
+      {
+        "Url": "images/InnovationProject/PythonData9.webp",
+        "Description": "Clustering",
+        "Alt": "ML/AI DIRECTOR: Clustering"
+      },
+      {
+        "Url": "images/InnovationProject/PythonDataCombined.webp",
+        "Description": "Data Visualization",
+        "Alt": "ML/AI DIRECTOR: Data Visualization"
+      },
+      {
+        "Url": "images/InnovationProject/PythonDataCombined2.webp",
+        "Description": "Various Data Plots",
+        "Alt": "ML/AI DIRECTOR: Various Data Plots"
+      },
+      {
+        "Url": "images/InnovationProject/PythonDataCombined3.webp",
+        "Description": "3D Graphs & Feature Importance",
+        "Alt": "ML/AI DIRECTOR: 3D Graphs & Feature Importance"
+      }
+    ]
+  },
+  {
+    "Name": "OpenGL Renderer",
+    "Description": "In 2021, we explored graphics programming concepts such as shaders and GPU APIs like OpenGL, while continuing to refine our C++ skills. I successfully implemented rendering, as demonstrated in the image, and integrated basic input and audio management. The scene allows for free camera movement and includes background music. Scene modification and expansion are straightforward. While the project may not be visually impressive, I encourage reviewing the source code. It's possible to build and run it independently, though setting up dependencies like GLFW, GLEW, and GLM may require some effort—installation instructions are provided on GitHub.",
+    "Technologies": [
+      "C++",
+      "C",
+      "OpenGL"
+    ],
+    "YearRange": "2021",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/OpenGLDemo"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/OpenGL/OpenGL1.webp",
+        "Description": "3D Scene Rendering",
+        "Alt": "OpenGL Renderer: 3D Scene Rendering"
+      }
+    ]
+  },
+  {
+    "Name": "Nords and Swords",
+    "Description": "Nords and Swords was a collaborative game project between programmers from Metropolia University of Applied Sciences and artists from Stadin AO Vocational College. The game was inspired by the flash game series Swords and Sandals, featuring turn-based combat where players face off against opponents. Victories grant experience and in-game currency, which can be used to upgrade attributes and equipment. I served as the lead programmer, overseeing development tasks and taking on remaining responsibilities such as menu systems, scene management, camera controls, and audio implementation.",
+    "Technologies": [
+      "C#",
+      "Unity",
+      "Team management"
+    ],
+    "YearRange": "2020",
+    "Links": [
+      {
+        "Text": "Drive Folder",
+        "Url": "https://drive.google.com/drive/folders/1cL-WIAaqMUxpgvuTtrogVP7geioqSQLs"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/NaS/NaS1.webp",
+        "Description": "Gameplay Screenshot",
+        "Alt": "Nords and Swords: Gameplay Screenshot"
+      }
+    ]
+  },
+  {
+    "Name": "Chess with AI",
+    "Description": "Basic console Chess written with C++. It includes all features you would assume, including castling and en passant. You can also choose each color to be AI or human player, allowing PvP, PvAI or AIvAI. The interesting part about this project is the chess engine. It uses Minimax algorithm to calculate all possible future game trees. Additionally, Alpha-Beta pruning was implemented to calculate potentially good game trees further, by cutting bad game trees earlier.",
+    "Technologies": [
+      "C++",
+      "Algorithms",
+      "Game theory"
+    ],
+    "YearRange": "2020",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/ChessProject"
+      },
+      {
+        "Text": "Minimax - Wikipedia",
+        "Url": "https://en.wikipedia.org/wiki/Minimax#Minimax_algorithm_with_alternate_moves"
+      },
+      {
+        "Text": "Alpha-Beta Pruning - Wikipedia",
+        "Url": "https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/Chess/ChessGameTree.webp",
+        "Description": "Chess Game Trees Visualized",
+        "Alt": "Chess with AI: Chess Game Trees Visualized"
+      }
+    ]
+  },
+  {
+    "Name": "Collision Detection",
+    "Description": "2D Simulation of objects, which can calculate interactions between objects and surfaces. The surfaces and objects can have gravity and elasticity, meaning the simulation calculates new trajectories by these adjustable parameters. This project is great for understanding, how physics simulations or game engines for example work on the background. Python was chosen as the programming language, for easy visualization libraries, such as matplotlib.",
+    "Technologies": [
+      "Python",
+      "Physics"
+    ],
+    "YearRange": "2020",
+    "Links": [
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/CollisionDetection"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/CollisionDetection/CollisionDetection1.webp",
+        "Description": "Moving & Static Objects",
+        "Alt": "Collision Detection: Moving & Static Objects"
+      },
+      {
+        "Url": "images/CollisionDetection/CollisionDetection2.webp",
+        "Description": "Accurate Simulation",
+        "Alt": "Collision Detection: Accurate Simulation"
+      },
+      {
+        "Url": "images/CollisionDetection/CollisionDetection3.webp",
+        "Description": "Trajectories & Elasticity",
+        "Alt": "Collision Detection: Trajectories & Elasticity"
+      }
+    ]
+  },
+  {
+    "Name": "Balls and Boxes",
+    "Description": "Balls and Boxes is a fast-paced brick breaker game developed solo in under two weeks as a school project. It features escalating difficulty, unique brick types, basic powerups, and refined gameplay mechanics that make it feel polished and responsive. Subtle design choices enhance control and flow, creating a surprisingly engaging experience despite its simplicity.",
+    "Technologies": [
+      "C#",
+      "Unity"
+    ],
+    "YearRange": "2019",
+    "Links": [
+      {
+        "Text": "Drive Folder",
+        "Url": "https://drive.google.com/drive/folders/1CO5yl0YdGg9zDHGR-1aAj_Vvz-J7qv9q"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/BnB/BnB1.webp",
+        "Description": "Gameplay Screenshot",
+        "Alt": "Balls and Boxes: Gameplay Screenshot"
+      },
+      {
+        "Url": "images/BnB/BnB4.webp",
+        "Description": "Game Over",
+        "Alt": "Balls and Boxes: Game Over"
+      },
+      {
+        "Url": "images/BnB/BnB5.webp",
+        "Description": "Main Menu",
+        "Alt": "Balls and Boxes: Main Menu"
+      }
+    ]
+  },
+  {
+    "Name": "Grainraiders",
+    "Description": "Grainraiders was my first full game project, developed with two classmates during our first year of school. Voted best out of ten by our class, it’s a fast-paced survival game where you defend your village’s food using a revolver and dynamite. Simple in concept but intense in execution, it remains one of my favorite early projects and holds a special place in my heart.",
+    "Technologies": [
+      "C#",
+      "Unity"
+    ],
+    "YearRange": "2019",
+    "Links": [
+      {
+        "Text": "Drive Folder",
+        "Url": "https://drive.google.com/drive/folders/1ZrgR-jDOkSU99XAiaLZ5g-UTM1kBBPGE"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/Grainraiders/GR1.webp",
+        "Description": "Short Story",
+        "Alt": "Grainraiders: Short Story"
+      },
+      {
+        "Url": "images/Grainraiders/GR4.webp",
+        "Description": "Defend Your Food",
+        "Alt": "Grainraiders: Defend Your Food"
+      },
+      {
+        "Url": "images/Grainraiders/GR5.webp",
+        "Description": "Loot Enemies",
+        "Alt": "Grainraiders: Loot Enemies"
+      },
+      {
+        "Url": "images/Grainraiders/GR6.webp",
+        "Description": "Basic Shop",
+        "Alt": "Grainraiders: Basic Shop"
+      },
+      {
+        "Url": "images/Grainraiders/GR7.webp",
+        "Description": "Explosives & Ragdolls",
+        "Alt": "Grainraiders: Explosives & Ragdolls"
+      },
+      {
+        "Url": "images/Grainraiders/GR8.webp",
+        "Description": "Endless Waves With Highscores",
+        "Alt": "Grainraiders: Endless Waves With Highscores"
+      }
+    ]
+  },
+  {
+    "Name": "SUMO Robot",
+    "Description": "In our first year of school, we explored IoT by building and programming Sumo robots in C. We used sensors for line-following, cameras for object detection, and microcontrollers to bring it all together, with data sent to PCs via PuTTY. We later programmed the robots to battle by pushing each other out of a ring. It was a fun and hands-on project that taught me a lot—and one that always brings back great memories.",
+    "Technologies": [
+      "C",
+      "Embedded Systems"
+    ],
+    "YearRange": "2018",
+    "Links": [
+      {
+        "Text": "Drive Video",
+        "Url": "https://drive.google.com/file/d/11RXObQrnnSGG80rzX_VXXZ-4hYEEMUZT/preview"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/SUMO/sumorobotpath.webp",
+        "Description": "Follow Path",
+        "Alt": "SUMO Robot: Follow Path"
+      },
+      {
+        "Url": "images/SUMO/sumorobotring.webp",
+        "Description": "Push Opponents Out",
+        "Alt": "SUMO Robot: Push Opponents Out"
+      }
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joonas Suuronen</title>
+<meta name="description" content="Portfolio of Joonas Suuronen, software engineer from Espoo, Finland: experience, projects, education and references.">
+<meta property="og:title" content="Joonas Suuronen, Software Engineer">
+<meta property="og:description" content="Experience, projects, education and references.">
+<meta property="og:image" content="images/Joonas1.webp">
+<meta name="theme-color" content="#0a0c11">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c11'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='800' font-size='30' text-anchor='middle' fill='%23ffc940'%3EJ%3Ctspan fill='%235aa2ff'%3ES%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#about" aria-label="Back to top"><span class="y">J</span><span class="b">S</span></a>
+    <nav aria-label="Sections">
+      <ul class="nav__links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO / ABOUT -->
+  <section class="hero" id="about">
+    <div class="hero__text">
+      <p class="eyebrow" data-bind="eyebrow">&nbsp;</p>
+      <h1 class="hero__name" data-bind="name">&nbsp;</h1>
+      <p class="hero__greeting" data-bind="greeting"></p>
+      <div class="hero__intro" data-bind="intro"></div>
+      <figure class="quote" data-bind="quote" hidden></figure>
+      <div class="hero__actions">
+        <a class="btn btn--primary" data-bind="resume" href="#" target="_blank" rel="noopener">View resume</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <img data-bind="photo" alt="" width="900" height="1350">
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <header class="section__head">
+      <h2>Experience</h2>
+      <span class="section__count" data-count="experience"></span>
+    </header>
+    <ol class="timeline" data-list="experience"></ol>
+  </section>
+
+  <section class="section" id="projects">
+    <header class="section__head">
+      <h2>Projects</h2>
+      <span class="section__count" data-count="projects"></span>
+    </header>
+    <div class="filters" role="toolbar" aria-label="Filter projects by technology" data-list="filters"></div>
+    <ul class="projects" data-list="projects"></ul>
+  </section>
+
+  <section class="section" id="education">
+    <header class="section__head">
+      <h2>Education</h2>
+      <span class="section__count" data-count="education"></span>
+    </header>
+    <ol class="timeline" data-list="education"></ol>
+  </section>
+
+  <section class="section" id="references">
+    <header class="section__head">
+      <h2>References</h2>
+      <span class="section__count" data-count="references"></span>
+    </header>
+    <ul class="refs" data-list="references"></ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2 class="contact__title">Let’s build something<span class="y">.</span></h2>
+    <div class="contact__grid" data-list="contact"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span data-bind="footer"></span>
+  <a href="#about">Back to top ↑</a>
+</footer>
+
+<!-- Project details dialog -->
+<dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+  <div class="modal__inner">
+    <button class="modal__close" type="button" data-close aria-label="Close">✕</button>
+    <div class="gallery" data-gallery>
+      <div class="gallery__stage">
+        <img alt="" data-gallery-img>
+        <button class="gallery__nav gallery__nav--prev" type="button" data-prev aria-label="Previous image">‹</button>
+        <button class="gallery__nav gallery__nav--next" type="button" data-next aria-label="Next image">›</button>
+      </div>
+      <div class="gallery__bar">
+        <span class="gallery__caption" data-gallery-caption></span>
+        <span class="gallery__index" data-gallery-index></span>
+      </div>
+    </div>
+    <div class="modal__body">
+      <p class="eyebrow" data-modal-year></p>
+      <h3 id="modal-title" data-modal-title></h3>
+      <ul class="tags" data-modal-tags></ul>
+      <p data-modal-desc></p>
+      <div class="modal__links" data-modal-links></div>
+    </div>
+  </div>
+</dialog>
+
+<noscript><p class="noscript">This site needs JavaScript to load its content.</p></noscript>
+<script src="js/main.js"></script>
+</body>
+</html>
