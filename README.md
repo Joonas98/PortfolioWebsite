@@ -1,52 +1,75 @@
 # Joonas Suuronen – Portfolio
 
-A plain static website. There is no build step, framework or dependency.
+Personal portfolio website of Joonas Suuronen, software engineer from Espoo, Finland.
+
+**Live site:** https://joonas98.github.io/PortfolioWebsite/
+
+The site is plain HTML, CSS and JavaScript with no framework, build step or dependencies. All of the content
+(introduction, work experience, projects, education and references) lives in JSON files, and a small script renders
+it into the page when it loads.
+
+## Features
+
+- **Content-driven:** every section is generated from a JSON file in `data/`, so adding or editing an entry never
+  requires touching HTML.
+- **Project gallery:** projects are shown as cards. Clicking one opens a dialog with an image gallery (arrow keys
+  work), the full description and links.
+- **Technology filters:** filter chips are generated automatically from technologies used in two or more projects.
+- **Scraper-resistant contact details:** email addresses and phone numbers are stored encoded and only decoded in the
+  browser when a visitor clicks *Show email* or *Show number*. They never appear as readable text in the HTML or JSON.
+- **Responsive and accessible:** works down to phone width, supports keyboard navigation and respects
+  reduced-motion settings.
+- **Lightweight:** images are WebP; the whole site is around 3.5 MB, and each page view loads only what is visible.
+
+## Project structure
 
 ```
-index.html        page layout
-css/style.css     all styling (colors are the tokens at the top)
-js/main.js        reads the JSON files and renders the page
-data/             ALL content lives here
-images/           images referenced from the JSON
-assets/resume.pdf resume
+index.html            page skeleton
+css/style.css         all styling; colors and fonts are defined as variables at the top
+js/main.js            loads the JSON files and renders every section
+data/
+  profile.json        name, role, introduction, quote, contact details, links, photo and resume path
+  experience.json     work history, newest first
+  projects.json       projects, in display order
+  education.json      education, newest first
+  references.json     references and their contact details
+images/               photo, company logos and project screenshots
+assets/resume.pdf     resume linked from the page
 ```
 
-## Editing content
+## Content format
 
-Edit the JSON files in `data/`:
+Entries appear in the same order as in their file. A project entry looks like this:
 
-| File | What it holds |
-|---|---|
-| `profile.json` | name, role, intro text, quote, email, phone, links, photo, resume path |
-| `experience.json` | jobs, newest first |
-| `projects.json` | projects, in the order they appear |
-| `education.json` | schools and degrees |
-| `references.json` | references and their contact details |
+```json
+{
+  "Name": "Project name",
+  "Description": "What it is and what I did.",
+  "Technologies": ["C#", "Unity"],
+  "YearRange": "2024 - 2025",
+  "Links": [{ "Text": "GitHub", "Url": "https://github.com/..." }],
+  "Images": [{ "Url": "images/Folder/shot1.webp", "Description": "Caption", "Alt": "Alt text" }]
+}
+```
 
-Every list is shown in the order it appears in its file. To add an item, copy an existing one and change the values.
-Image paths are relative, e.g. `images/MyProject/shot1.webp` (no leading `/`), so the site also works from a sub-folder
-such as `username.github.io/PortfolioWebsite/`.
+Image paths are relative (no leading `/`), so the site works both at a domain root and in a sub-folder such as
+GitHub Pages' `username.github.io/repository/`. `Images` and `Links` can be left empty; a project without images gets a
+generated placeholder.
 
-Project technology filters are generated automatically from technologies that appear in 2 or more projects.
+### Encoded contact details
 
-## Emails and phone numbers (scraper protection)
-
-Emails and phone numbers in `profile.json` and `references.json` are stored encoded, like
-`"Email": "enc:bW9jLmxpYW1nQDluZW5vcnV1c2o="`. The page only decodes them when a visitor clicks
-**Show email** / **Show number**, so they never appear in the HTML or JSON as readable text.
-
-To encode a new value, open any browser's developer console (F12 → Console) and run:
+`Email` and `Phone` values starting with `enc:` are Base64 of the reversed string. To encode a new value, run this in
+any browser console:
 
 ```js
 "enc:" + btoa([..."someone@example.com"].reverse().join(""))
 ```
 
-Paste the result (including `enc:`) into the JSON. A plain, unencoded value also works but isn't protected.
+Plain values without the prefix also work, but they are not protected from scrapers.
 
-## Previewing locally
+## Running locally
 
-The page loads JSON with `fetch`, so it must be served over http (double-clicking `index.html` won't load content).
-Run one of these in this folder, then open http://localhost:8000
+The page loads its content with `fetch`, so it needs to be served over HTTP rather than opened as a file:
 
 ```
 python -m http.server 8000
@@ -54,18 +77,16 @@ python -m http.server 8000
 npx serve -l 8000
 ```
 
-The VS Code "Live Server" extension also works.
+Then open http://localhost:8000.
 
-## Deploying
+## Deployment
 
-Upload the folder as-is to any static host. With GitHub Pages:
+The repository root is the website. GitHub Pages serves it directly from the `main` branch (**Settings → Pages →
+Deploy from a branch → `main` / root**), so every commit to `main` is live within a minute or two. Any other static
+host (Netlify, Cloudflare Pages, Vercel, a plain web server) works the same way, with no build command and the
+repository root as the output directory.
 
-1. Push this folder to the repository root on the `main` branch.
-2. On GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. The site goes live at `https://<username>.github.io/<repo>/` within a minute. Every later push redeploys automatically.
+## Previous version
 
-Netlify, Vercel and Cloudflare Pages work the same way: point them at the repo, leave the build command empty and set the output directory to the root.
-
-## Adding images
-
-Keep screenshots around 1600px wide or smaller. WebP is used for size; JPG and PNG work too.
+The earlier Blazor WebAssembly version of this portfolio is archived at
+[Joonas98/OldPortfolioWebsite](https://github.com/Joonas98/OldPortfolioWebsite).
