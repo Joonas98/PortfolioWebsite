@@ -17,6 +17,9 @@ it into the page when it loads.
 - **Technology filters:** filter chips are generated automatically from technologies used in two or more projects.
 - **Scraper-resistant contact details:** email addresses and phone numbers are stored encoded and only decoded in the
   browser when a visitor clicks *Show email* or *Show number*. They never appear as readable text in the HTML or JSON.
+- **Light and dark mode:** follows the visitor's system setting on the first visit, and a toggle in the navigation
+  switches between the two. The choice is remembered, and the theme is applied before the page is drawn, so there is no
+  flash of the wrong colors.
 - **Responsive and accessible:** works down to phone width, supports keyboard navigation and respects
   reduced-motion settings.
 - **Share-ready:** a preview image and Open Graph / Twitter tags give the site a proper card when the link is shared on

@@ -240,6 +240,42 @@
           r.Phone ? line("Phone", r.Phone, "phone") : null))));
   }
 
+  /* ---------- Light / dark theme ----------
+     The initial theme is set by a small script in <head> (saved choice, else system setting, else dark).
+     The toggle saves the visitor's choice; without a saved choice the site follows system changes live. */
+  const themeBtn = $("[data-theme-toggle]");
+  const themeMeta = $('meta[name="theme-color"]');
+  const systemLight = window.matchMedia ? window.matchMedia("(prefers-color-scheme: light)") : null;
+
+  function applyTheme(theme, animate) {
+    const root = document.documentElement;
+    if (animate) {
+      root.classList.add("theme-switching");
+      setTimeout(() => root.classList.remove("theme-switching"), 400);
+    }
+    root.setAttribute("data-theme", theme);
+    if (themeMeta) themeMeta.setAttribute("content", theme === "light" ? "#f4f6fa" : "#0a0c11");
+    if (themeBtn) {
+      const label = theme === "light" ? "Switch to dark mode" : "Switch to light mode";
+      themeBtn.setAttribute("aria-label", label);
+      themeBtn.title = label;
+    }
+  }
+
+  applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark", false);
+
+  if (themeBtn) themeBtn.addEventListener("click", () => {
+    const next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    applyTheme(next, true);
+    try { localStorage.setItem("theme", next); } catch { /* storage unavailable: choice lasts for this visit */ }
+  });
+
+  if (systemLight && systemLight.addEventListener) systemLight.addEventListener("change", (e) => {
+    let saved = null;
+    try { saved = localStorage.getItem("theme"); } catch { /* ignore */ }
+    if (!saved) applyTheme(e.matches ? "light" : "dark", true);
+  });
+
   /* ---------- Boot ---------- */
   Promise.all(FILES.map((f) =>
     fetch(`data/${f}.json`, { cache: "no-cache" }).then((r) => {

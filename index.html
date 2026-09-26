@@ -7,6 +7,17 @@
 <meta name="description" content="Portfolio of Joonas Suuronen, a software engineer from Espoo, Finland: work experience, projects from game development to web tools, education and references.">
 <meta name="author" content="Joonas Suuronen">
 <meta name="theme-color" content="#0a0c11">
+<script>
+  /* Pick the theme before the page paints: the visitor's saved choice, otherwise their system setting, otherwise dark. */
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    var light = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+    var theme = saved === "light" || saved === "dark" ? saved : (light ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", theme === "light" ? "#f4f6fa" : "#0a0c11");
+  })();
+</script>
 <link rel="canonical" href="https://joonas98.github.io/PortfolioWebsite/">
 
 <!-- Link previews (Open Graph: Discord, LinkedIn, Slack, WhatsApp, Facebook...) -->
@@ -63,15 +74,21 @@
 <header class="nav" id="top">
   <div class="nav__inner">
     <a class="nav__brand" href="#about" aria-label="Back to top"><span class="y">J</span><span class="b">S</span></a>
-    <nav aria-label="Sections">
-      <ul class="nav__links">
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#references">References</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="nav__right">
+      <nav aria-label="Sections">
+        <ul class="nav__links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light mode" title="Switch to light mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
