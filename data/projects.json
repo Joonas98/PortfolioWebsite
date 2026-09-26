@@ -160,19 +160,44 @@
     ],
     "Images": [
       {
+        "Url": "images/ProjectForsaken/Screenshot1.webp",
+        "Description": "Double-Barrel Shotgun in the Forest",
+        "Alt": "The Forsaken: Double-Barrel Shotgun in the Forest"
+      },
+      {
         "Url": "images/ProjectForsaken/Screenshot2.webp",
-        "Description": "Many Gameplay Features",
-        "Alt": "The Forsaken: Many Gameplay Features"
+        "Description": "M107 Sniper Scope",
+        "Alt": "The Forsaken: M107 Sniper Scope"
+      },
+      {
+        "Url": "images/ProjectForsaken/Screenshot3.webp",
+        "Description": "Suppressed Pistol in the Fog",
+        "Alt": "The Forsaken: Suppressed Pistol in the Fog"
       },
       {
         "Url": "images/ProjectForsaken/Screenshot4.webp",
-        "Description": "Ragdolls, Explosives & Abilities",
-        "Alt": "The Forsaken: Ragdolls, Explosives & Abilities"
+        "Description": "Close Encounter",
+        "Alt": "The Forsaken: Close Encounter"
       },
       {
         "Url": "images/ProjectForsaken/Screenshot5.webp",
-        "Description": "Unique Graphics & Atmosphere",
-        "Alt": "The Forsaken: Unique Graphics & Atmosphere"
+        "Description": "Night and Rain",
+        "Alt": "The Forsaken: Night and Rain"
+      },
+      {
+        "Url": "images/ProjectForsaken/Screenshot6.webp",
+        "Description": "Sunset Atmosphere",
+        "Alt": "The Forsaken: Sunset Atmosphere"
+      },
+      {
+        "Url": "images/ProjectForsaken/Screenshot7.webp",
+        "Description": "Dynamic Lighting and Shadows",
+        "Alt": "The Forsaken: Dynamic Lighting and Shadows"
+      },
+      {
+        "Url": "images/ProjectForsaken/Screenshot8.webp",
+        "Description": "Weapon Shop",
+        "Alt": "The Forsaken: Weapon Shop"
       }
     ]
   },
