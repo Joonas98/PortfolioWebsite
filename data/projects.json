@@ -1,5 +1,45 @@
 [
   {
+    "Name": "Sting Bench",
+    "Description": "A browser-based tool for making short musical stings: the few-second musical moments behind game events, video intros, podcast transitions and notification sounds. It starts from eight styles, from a gentle piano motif and an eerie music box to a heroic fanfare, a haunted organ and a distorted guitar riff, and everything can be reshaped: key, scale, chord progression, ending, melody shape and tempo, with separate instruments for the lead, chords and bass. A piano roll shows what each layer plays, with the chord names underneath. All sound is synthesized in the browser without samples and exported as 44.1 kHz 16-bit WAV files, either as a single take, six variations, or a \"wave ladder\" of the same sting at five intensity levels for moments that build up over time. A companion tool to Reload Bench.",
+    "Technologies": [
+      "JavaScript",
+      "Web Audio API",
+      "Audio / DSP",
+      "Music theory",
+      "HTML",
+      "CSS"
+    ],
+    "YearRange": "2026",
+    "Links": [
+      {
+        "Text": "Live app",
+        "Url": "https://joonas98.github.io/sting-bench/"
+      },
+      {
+        "Text": "GitHub",
+        "Url": "https://github.com/Joonas98/sting-bench"
+      }
+    ],
+    "Images": [
+      {
+        "Url": "images/StingBench/PianoMotif.webp",
+        "Description": "Piano Motif Style",
+        "Alt": "Sting Bench: piano roll and waveform for the Piano Motif style"
+      },
+      {
+        "Url": "images/StingBench/GuitarRiff.webp",
+        "Description": "Guitar Riff Style",
+        "Alt": "Sting Bench: piano roll and waveform for the Guitar Riff style"
+      },
+      {
+        "Url": "images/StingBench/Controls.webp",
+        "Description": "Composition and Sound Controls",
+        "Alt": "Sting Bench: composition and sound controls"
+      }
+    ]
+  },
+  {
     "Name": "Reload Bench",
     "Description": "A browser-based sound design tool for game developers that synthesizes weapon foley from scratch: reload sequences, single gunshots and bullet impacts. Reloads are built step by step for eight weapon platforms, from pistol to energy rifle, and every step has a timing marker so the sound lines up with the reload animation. Shots are shaped layer by layer (crack, blast, mechanics, casing drop) and placed indoors, outdoors or in an urban space, with an optional suppressor, while impacts cover eight surfaces such as flesh, wood, metal and body armor. Everything is generated with the Web Audio API in the visitor's browser without any recorded samples, and exported as 44.1 kHz 16-bit WAV files: a single take, or a ZIP of six variations for round-robin playback so repeated sounds never play back identically.",
     "Technologies": [
