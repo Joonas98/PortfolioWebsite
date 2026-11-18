@@ -5,8 +5,6 @@
     "Technologies": [
       "JavaScript",
       "Web Audio API",
-      "Audio / DSP",
-      "Music theory",
       "HTML",
       "CSS"
     ],
@@ -45,7 +43,6 @@
     "Technologies": [
       "JavaScript",
       "Web Audio API",
-      "Audio / DSP",
       "HTML",
       "CSS"
     ],
@@ -161,43 +158,28 @@
     "Images": [
       {
         "Url": "images/ProjectForsaken/Screenshot1.webp",
-        "Description": "Double-Barrel Shotgun in the Forest",
-        "Alt": "The Forsaken: Double-Barrel Shotgun in the Forest"
+        "Description": "Autumn Meadow",
+        "Alt": "The Forsaken: Autumn Meadow"
       },
       {
         "Url": "images/ProjectForsaken/Screenshot2.webp",
-        "Description": "M107 Sniper Scope",
-        "Alt": "The Forsaken: M107 Sniper Scope"
+        "Description": "Red Fog Ambush",
+        "Alt": "The Forsaken: Red Fog Ambush"
       },
       {
         "Url": "images/ProjectForsaken/Screenshot3.webp",
-        "Description": "Suppressed Pistol in the Fog",
-        "Alt": "The Forsaken: Suppressed Pistol in the Fog"
+        "Description": "Recovering the Weapons Case at Dusk",
+        "Alt": "The Forsaken: Recovering the Weapons Case at Dusk"
       },
       {
         "Url": "images/ProjectForsaken/Screenshot4.webp",
-        "Description": "Close Encounter",
-        "Alt": "The Forsaken: Close Encounter"
+        "Description": "Searching for the Beacon",
+        "Alt": "The Forsaken: Searching for the Beacon"
       },
       {
         "Url": "images/ProjectForsaken/Screenshot5.webp",
-        "Description": "Night and Rain",
-        "Alt": "The Forsaken: Night and Rain"
-      },
-      {
-        "Url": "images/ProjectForsaken/Screenshot6.webp",
-        "Description": "Sunset Atmosphere",
-        "Alt": "The Forsaken: Sunset Atmosphere"
-      },
-      {
-        "Url": "images/ProjectForsaken/Screenshot7.webp",
-        "Description": "Dynamic Lighting and Shadows",
-        "Alt": "The Forsaken: Dynamic Lighting and Shadows"
-      },
-      {
-        "Url": "images/ProjectForsaken/Screenshot8.webp",
-        "Description": "Weapon Shop",
-        "Alt": "The Forsaken: Weapon Shop"
+        "Description": "Night Patrol with a Flashlight",
+        "Alt": "The Forsaken: Night Patrol with a Flashlight"
       }
     ]
   },
