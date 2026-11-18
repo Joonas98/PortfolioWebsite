@@ -1,5 +1,43 @@
 [
   {
+    "Name": "Colony RTS",
+    "Description": "A 2D side-view colony and real-time strategy game set in a Nordic forest, written in Rust without a game engine: winit opens the window, pixels on wgpu puts the frame on screen, and everything else, renderer included, is my own code. You land alone with a pick, an axe and the Hearthstone, then dig, chop, farm and craft your way to a base built block by block on a grid where nothing floats, because every block carries a structural strength. Settlers you call in work as woodcutters, gatherers, haulers, crafters, builders or soldiers, find their own way through the base, and keep stock to standing orders like \"keep 40 bread\", working their way from stone tools to bronze. Raider strongholds send raids that grow with your colony until you march on them with your own warband. The simulation runs in fixed 60 Hz ticks, and the game is multiplayer-ready by design: even single-player runs as a host and a client exchanging versioned binary messages.",
+    "Technologies": [
+      "Rust",
+      "wgpu",
+      "winit"
+    ],
+    "YearRange": "2026",
+    "Links": [],
+    "Images": [
+      {
+        "Url": "images/ColonyRTS/Colony.webp",
+        "Description": "The Colony: Bunkhouse, Hearthstone and Workshops",
+        "Alt": "Colony RTS: The Colony: Bunkhouse, Hearthstone and Workshops"
+      },
+      {
+        "Url": "images/ColonyRTS/Mine.webp",
+        "Description": "Torch-Lit Mine",
+        "Alt": "Colony RTS: Torch-Lit Mine"
+      },
+      {
+        "Url": "images/ColonyRTS/WallBattle.webp",
+        "Description": "Defending the Palisade",
+        "Alt": "Colony RTS: Defending the Palisade"
+      },
+      {
+        "Url": "images/ColonyRTS/Stronghold.webp",
+        "Description": "Assaulting the Raider Stronghold",
+        "Alt": "Colony RTS: Assaulting the Raider Stronghold"
+      },
+      {
+        "Url": "images/ColonyRTS/Planning.webp",
+        "Description": "Planning View: Stock Orders and Settler Jobs",
+        "Alt": "Colony RTS: Planning View: Stock Orders and Settler Jobs"
+      }
+    ]
+  },
+  {
     "Name": "Sting Bench",
     "Description": "A browser-based tool for making short musical stings: the few-second musical moments behind game events, video intros, podcast transitions and notification sounds. It starts from eight styles, from a gentle piano motif and an eerie music box to a heroic fanfare, a haunted organ and a distorted guitar riff, and everything can be reshaped: key, scale, chord progression, ending, melody shape and tempo, with separate instruments for the lead, chords and bass. A piano roll shows what each layer plays, with the chord names underneath. All sound is synthesized in the browser without samples and exported as 44.1 kHz 16-bit WAV files, either as a single take, six variations, or a \"wave ladder\" of the same sting at five intensity levels for moments that build up over time. A companion tool to Reload Bench.",
     "Technologies": [
